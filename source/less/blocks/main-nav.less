@@ -1,4 +1,8 @@
-.main-nav{
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
   background-color:@color-blue-background;
   text-align: center;
   font-size:18px;
@@ -6,6 +10,38 @@
   font-weight: bold;
 }
 .main-nav__list{
+
   list-style: none;
-padding: 0px;
+margin: 0 auto ;
+padding: 0;
+
+}
+@media (min-width: @tablet-width){
+  .main-nav {
+    margin : 0 auto;
+  }
+
+  .main-nav__wrapper {
+    width: 768px;
+
+    background-color:@color-blue-background;
+  }
+  .navigation-list {
+    display: flex;
+    width: 768px;
+
+
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .main-nav__wrapper {
+    width: 1200px;
+  }
+  .navigation-list{
+    width: 1200px;
+  }
+
 }

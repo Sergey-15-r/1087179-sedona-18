@@ -1,7 +1,16 @@
 .criterion {
+display: flex;
 
   background-color:@color-blue-background;
   color           : white;
+}
+.criterion__list{
+
+  list-style: none;
+  padding-top: 61px;
+   padding-right: 27px;
+   padding-bottom: 45px;
+   padding-left: 28px;
 }
 
 .criterion__city {
@@ -18,4 +27,44 @@
 .criterion__text {
   font-size  : 14px;
   line-height: 21px;
+}
+@media (min-width: @tablet-width){
+  .criterion{
+
+    width: 768px;
+    margin: 0 auto;
+  }
+  .criterion__wrapper{
+
+    display: flex;
+
+  }
+  .criterion__list {
+   width: 256px;
+   padding-top: 46px;
+   padding-right: 47px;
+   padding-bottom: 49px;
+   padding-left: 47px;
+  }
+  .criterion__image {
+    width: 512px;
+  }
+}
+@media(min-width:@desktop-width){
+  .criterion{
+
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .criterion__image {
+    width: 800px;
+  }
+  .criterion__list {
+    width: 400px;
+    padding-top: 53px;
+   padding-right: 67px;
+   padding-bottom: 63px;
+   padding-left: 68px;
+  }
+
 }
