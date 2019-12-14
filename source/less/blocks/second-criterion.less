@@ -1,11 +1,11 @@
 .second-criterion {
-
-  width: 0 auto;
+  width: 320px;
+  margin: 0 auto;
   background-color: @color-blue-background;
   color           : @color-white-color;
 }
-.second-criterion__list{
-  list-style: none;
+.second-criterion__container{
+
   padding-top: 45px;
    padding-right: 31px;
    padding-bottom: 42px;
@@ -28,12 +28,12 @@
 }
 @media(min-width:@tablet-width) {
   .second-criterion {
-    width: 768px;
+    width: @tablet-width;
   }
   .second-criterion__wrapper {
     display: flex;
   }
-  .second-criterion__list {
+  .second-criterion__container{
     width: 256px;
     padding-top: 50px;
    padding-right: 51px;
@@ -47,7 +47,7 @@
 }
 @media(min-width:@desktop-width) {
   .second-criterion {
-  width: 1200px;
+  width: @desktop-width;
   }
   .second-criterion__list {
     width: 400px;
