@@ -1,27 +1,47 @@
+.recreation {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .recreation__housing {
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .recreation__souvenir {
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .recreation__food {
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .recreation__text {
-  color:#696969;
-  font-size  : 14px;
+  color:@color-gray-color;
+  font-size: 14px;
   line-height: 21px;
 }
 
 .recreation__list {
   list-style: none;
+}
+@media (min-width: @tablet-width){
+.recreation{
+  width:@tablet-width;
+  }
+
+.recreation__list{
+  display: flex;
+  }
+
+}
+@media(min-width:@desktop-width){
+.recreation {
+  width: @desktop-width;
+  }
 }

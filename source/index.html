@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>СЕДОНА</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,9 +42,11 @@
     </section>
     <section class="criterion">
       <div class="criterion__wrapper">
-        <b class="criterion__city">НАСТОЯЩИЙ ГОРОДОК</b>
-        <p class="criterion__number">- №1 -</p>
-        <p class="criterion__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        <div class="criterion__container">
+          <b class="criterion__city">НАСТОЯЩИЙ ГОРОДОК</b>
+          <p class="criterion__number">- №1 -</p>
+          <p class="criterion__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
         <img class="criterion__image" src="img/main-city-mobile@1x.jpg" width="320" height="260"
           alt="НАСТОЯЩИЙ ГОРОДОК">
       </div>
@@ -68,35 +71,43 @@
           </li>
         </ul>
       </div>
+      </div>
     </section>
     <section class="second-criterion">
       <div class="second-criterion__wrapper">
-        <b class="second-criterion__bridge">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
-        <p class="second-criterion__number">- №2 -</p>
-        <p class="second-criterion__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
-        <img class="second-criterion__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260"
-          alt="МОСТ ДЬЯВОЛА">
+        <img class="second-criterion__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260">
+        <div class="second-criterion__container">
+          <b class="second-criterion__bridge">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
+          <p class="second-criterion__number">- №2 -</p>
+          <p class="second-criterion__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+        </div>
       </div>
     </section>
-    <section class="third-criterion">
-      <div class="third-criterion__wrapper">
-        <b class="third-criterion__area">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-        <p class="third-criterion__number">- №3 -</p>
-        <p class="third-criterion__text">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
-      </div>
-    </section>
-    <section class="fourth-criterion">
-      <div class="fourth-criterion__wrapper">
-        <b class="fourth-criterion__road">КРАСИВАЯ ДОРОГА</b>
-        <p class="fourth-criterion__number">- №4 -</p>
-        <p class="fourth-criterion__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
-      </div>
-    </section>
-    <section class="fifth-criterion">
-      <div class="fifth-criterion__wrapper">
-        <b class="fifth-criterion__tourist">МАЛО ТУРИСТОВ</b>
-        <p class="fifth-criterion__number">- №5 -</p>
-        <p class="fifth-criterion__text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ </p>
+    <section class="sedona-advantages">
+      <div class="sedona-advantages__wrapper">
+        <ul class="sedona-advantages__list">
+          <li class="third-criterion">
+            <div class="third-criterion__wrapper">
+              <b class="third-criterion__area">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+              <p class="third-criterion__number">- №3 -</p>
+              <p class="third-criterion__text">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+            </div>
+          </li>
+          <li class="fourth-criterion">
+            <div class="fourth-criterion__wrapper">
+              <b class="fourth-criterion__road">КРАСИВАЯ ДОРОГА</b>
+              <p class="fourth-criterion__number">- №4 -</p>
+              <p class="fourth-criterion__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+            </div>
+          </li>
+          <li class="fifth-criterion">
+            <div class="fifth-criterion__wrapper">
+              <b class="fifth-criterion__tourist">МАЛО ТУРИСТОВ</b>
+              <p class="fifth-criterion__number">- №5 -</p>
+              <p class="fifth-criterion__text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
