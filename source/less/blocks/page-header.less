@@ -5,11 +5,16 @@
   width: 320px;
 }
 .page-header__logo {
+  order: 2;
   margin: 0 auto;
+  z-index: 1;
 }
 @media (min-width: @tablet-width) {
 .page-header {
   width: @tablet-width;
+  }
+  .page-header__logo {
+   margin-top: -56px;
   }
 
 }
