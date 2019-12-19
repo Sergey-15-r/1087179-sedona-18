@@ -3,27 +3,96 @@
   flex-direction: column;
   width:320px ;
   margin: 0 auto;
-  margin-top: -32px;
+  margin-top: -33px;
+
+
 
 }
-.description-slogan {
+.description__slogan {
+  margin-top: 35px;
+  margin-left: 30px;
+  margin-right: 33px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
 
 .description__intro {
+
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 34px;
+  margin-right: 35px;
   color: @color-gray-color;
   font-size: 14px;
   line-height: 26px;
-}
-@media (min-width: @tablet-width){
+  text-align: center;
+ }
+ .description__container {
+   position: relative;
+ }
+
+ .description__text {
+   position: absolute;
+   top: 89px;
+   left: 20px;
+   width: 281px;
+   height: 214px;
+ }
+
+@media (min-width: @tablet-width) {
 .description {
+  margin-top: 0;
   width: @tablet-width;
+
 }
 .description__image {
   width: @tablet-width;
+  height: 518px;
  }
+ .description__container {
+  position: relative;
+}
+
+.description__text {
+  position: absolute;
+  top: 89px;
+  left: 200px;
+  width: 281px;
+  height: 214px;
+}
+.description__container {
+  position: relative;
+}
+
+.description__text {
+  position: absolute;
+  top: 76px;
+  left: 154px;
+  width: 460px;
+  height: 350px;
+}
+.description__slogan {
+  padding-top: 7px;
+  padding-left: 120px;
+  padding-right: 116px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.description__intro {
+  margin: 0;
+  margin-top: 8px;
+    margin-left: 34px;
+  margin-right: 35px;
+  margin-bottom: 49px;
+  color: #696969;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
 }
 @media (min-width: @desktop-width){
 .description {
@@ -31,5 +100,36 @@
 }
 .description__image {
   width:@desktop-width;
+  height: 518px;
  }
+
+
+.description__text {
+  position: absolute;
+  top: 78px;
+  left: 371px;
+  width: 460px;
+  height: 350px;
+}
+.description__slogan {
+  padding-top: 9px;
+  padding-left: 331px;
+  padding-right: 328px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.description__intro {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 34px;
+  margin-right: 35px;
+  margin-bottom: 49px;
+  color: #696969;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
 }

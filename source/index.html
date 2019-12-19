@@ -11,22 +11,26 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="СЕДОНА">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="СЕДОНА">
+      </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list navigation-list">
-          <li class="navigation-list__item">
+          <li class="navigation-list__item main__item">
             <a>ГЛАВНАЯ</a>
           </li>
-          <li class="navigation-list__item">
+          <li class="navigation-list__item photo__item">
             <a href="photo.html">ФОТО И ВИДЕО</a>
           </li>
-          <li class="navigation-list__item">
+          <li class="navigation-list__item form__item">
             <a href="form.html">ФОРМА ОТЗЫВА</a>
           </li>
-          <li class="navigation-list__item">
+          <li class="navigation-list__item link__item">
             <a href="//htmlacademy.ru">HTMLACADEMY</a>
           </li>
         </ul>
@@ -34,18 +38,25 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ</h1>
+    <h1 class="visually-hidden">СЕДОНА  НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ</h1>
     <section class="description">
-      <img class="description__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
-      <b class="description__slogan">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b>
-      <p class="description__intro">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ,ЧЕМ ГРАНД КАНЬОН!</p>
+      <div class="description__container">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg">
+            <img class="description__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
+        </picture>
+      <img class="description__text" src="img/text-sedona-index.svg">
+      </div>
+      <p class="description__slogan">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+      <p class="description__intro">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
     </section>
     <section class="criterion">
       <div class="criterion__wrapper">
         <div class="criterion__container">
-          <b class="criterion__city">НАСТОЯЩИЙ ГОРОДОК</b>
-          <p class="criterion__number">- №1 -</p>
-          <p class="criterion__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <p class="criterion__city">НАСТОЯЩИЙ ГОРОДОК</p>
+          <p class="criterion__number">— №1 —</p>
+          <p class="criterion__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
         <img class="criterion__image" src="img/main-city-mobile@1x.jpg" width="320" height="260"
           alt="НАСТОЯЩИЙ ГОРОДОК">
@@ -55,17 +66,17 @@
       <div class="recreation__wrapper">
         <ul class="recreation__list">
           <li class="recreation__item">
-            <img class="recreattion-image" src="img/icon-house.svg" alt="ЖИЛЬЕ">
+            <img class="recreation-housing" src="img/icon-house.svg" alt="ЖИЛЬЕ">
             <b class="recreation__housing">ЖИЛЬЕ</b>
-            <p class="recreation__text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ,ВСЕ КАК В КИНО!</p>
+            <p class="recreation__text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
           </li>
           <li class="recreation__item">
-            <img class="recreattion-image" src="img/icon-gift.svg" alt="СУВЕНИРЫ">
+            <img class="recreation-souvenir" src="img/icon-gift.svg" alt="СУВЕНИРЫ">
             <b class="recreation__souvenir">СУВЕНИРЫ</b>
-            <p class="recreation__text">НЕ ТОЛЬКО КИТАЙСКОГО,НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+            <p class="recreation__text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
           </li>
           <li class="recreation__item">
-            <img class="recreattion-image" src="img/icon-burger.svg" alt="ЕДА">
+            <img class="recreation-food" src="img/icon-burger.svg" alt="ЕДА">
             <b class="recreation__food">ЕДА</b>
             <p class="recreation__text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
           </li>
@@ -75,12 +86,12 @@
     </section>
     <section class="second-criterion">
       <div class="second-criterion__wrapper">
-        <img class="second-criterion__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260">
         <div class="second-criterion__container">
           <b class="second-criterion__bridge">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
           <p class="second-criterion__number">- №2 -</p>
           <p class="second-criterion__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
         </div>
+        <img class="second-criterion__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260">
       </div>
     </section>
     <section class="sedona-advantages">
@@ -97,7 +108,7 @@
             <div class="fourth-criterion__wrapper">
               <b class="fourth-criterion__road">КРАСИВАЯ ДОРОГА</b>
               <p class="fourth-criterion__number">- №4 -</p>
-              <p class="fourth-criterion__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+              <p class="fourth-criterion__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС- ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
             </div>
           </li>
           <li class="fifth-criterion">
@@ -116,19 +127,18 @@
       <p class="social__text">#VISITSEDONA</p>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке<span class="visually-hidden"></span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-            Инстаграме</a>
+          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">РАЗРАБОТАНО</b>
+      <p class="copyright__text">РАЗРАБОТАНО</p>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTMLACADEMY">
       </a>

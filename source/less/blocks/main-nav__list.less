@@ -4,8 +4,6 @@
   color: #ffffff;
   padding-top: 7px;
   padding-bottom: 7px;
-  text-transform: uppercase;
-  text-decoration: none;
 
   background-color: @color-blue-background;
   border-top: 1px solid #9ac2db;
@@ -22,5 +20,95 @@
     color: rgba(255, 255, 255, 0.3);
     background-color: #669ec0;
     border-top-color: #669ec0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+
+    background-color:@color-white-backround;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .main-nav__list a {
+    padding: 0;
+    background: none;
+    color: black;
+    border: none;
+  }
+  .navigation-list__item a[href] {
+    &:hover {
+      color: #81b3d2;
+
+      background-color: white;
+    }
+
+    &:active {
+      color: black;
+
+      background-color: white;
+      opacity: 0.3;
+    }
+  }
+  .main__item {
+
+    padding-top: 15px;
+    padding-right: 48px;
+    padding-bottom: 15px;
+    padding-left: 49px;
+  }
+  .photo__item {
+
+    padding-top: 15px;
+    padding-right: 27px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+  }
+  .form__item {
+
+    padding-top: 15px;
+    padding-right: 22px;
+    padding-bottom: 16px;
+    padding-left: 183px;
+
+  }
+  .link__item {
+
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main__item {
+
+    padding-top: 15px;
+    padding-right: 91px;
+    padding-bottom: 15px;
+    padding-left: 91px;
+  }
+  .photo__item {
+
+    padding-top: 15px;
+    padding-right: 71px;
+    padding-bottom: 16px;
+    padding-left: 71px;
+  }
+  .form__item {
+
+    padding-top: 15px;
+    padding-right: 69px;
+    padding-bottom: 16px;
+    padding-left: 312px;
+
+  }
+  .link__item {
+
+    padding-top: 15px;
+    padding-right: 71px;
+    padding-bottom: 16px;
+    padding-left: 71px;
   }
 }
