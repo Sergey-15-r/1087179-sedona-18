@@ -92,7 +92,9 @@
 
 @media (max-width: @mobile-width-only) {
 
-  .main-nav--closed .navigation-list__item {
+  /*саш я не понял что тут надо исправить */
+
+  .main-nav--closed .main-nav__item {
     display: none;
 
   }
@@ -104,7 +106,7 @@
     min-height: 0;
   }
 
-  .main-nav--nojs .navigation-list__item {
+  .main-nav--nojs .main-nav__item {
     display: block;
   }
   }
@@ -124,7 +126,7 @@
   }
 
 
-  .navigation-list {
+  .main-nav__list {
     display        : flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -139,7 +141,7 @@
     width: @desktop-width;
   }
 
-  .navigation-list {
+  .main-nav__list {
     width: @desktop-width;
   }
 

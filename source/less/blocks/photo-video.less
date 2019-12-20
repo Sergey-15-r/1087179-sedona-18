@@ -1,19 +1,41 @@
 .photo-video {
   width: 320px;
   margin: 0 auto;
-  margin-top: -76px;
+  margin-top: -32px;
 }
 .photo-video__slogan {
+  display: block;
+  padding-top: 33px;
+  padding-left: 99px;
   font-size  : 18px;
   line-height: 26px;
 }
 
 .photo-video__intro {
-  font-size  : 14px;
-  line-height: 21px;
+  padding-top: 13px;
+  padding-left: 24px;
+  padding-right: 22px;
+  padding-bottom: 26px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
+.photo-video__image {
+ position: relative;
+ width: 320px;
+ height: 157px;
+}
+.photo-video__text {
+  position: absolute;
+  top: 331px;
+  left: 190px;
+  width: 235px;
+  height: 39px;
+}
+
 @media (min-width: @tablet-width) {
 .photo-video {
+  margin-top: 0;
   width: @tablet-width;
 }
 .photo-video__image {

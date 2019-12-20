@@ -20,17 +20,17 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list navigation-list">
-          <li class="navigation-list__item main__item">
+        <ul class="main-nav__list ">
+          <li class="main-nav__item main__item">
             <a>ГЛАВНАЯ</a>
           </li>
-          <li class="navigation-list__item photo__item">
+          <li class="main-nav__item photo__item">
             <a href="photo.html">ФОТО И ВИДЕО</a>
           </li>
-          <li class="navigation-list__item form__item">
+          <li class="main-nav__item form__item">
             <a href="form.html">ФОРМА ОТЗЫВА</a>
           </li>
-          <li class="navigation-list__item link__item">
+          <li class="main-nav__item link__item">
             <a href="//htmlacademy.ru">HTMLACADEMY</a>
           </li>
         </ul>
@@ -58,8 +58,12 @@
           <p class="criterion__number">— №1 —</p>
           <p class="criterion__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <img class="criterion__image" src="img/main-city-mobile@1x.jpg" width="320" height="260"
-          alt="НАСТОЯЩИЙ ГОРОДОК">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+            <img class="criterion__image" src="img/main-city-mobile@1x.jpg" width="320" height="260"
+            alt="НАСТОЯЩИЙ ГОРОДОК">
+        </picture>
       </div>
     </section>
     <section class="recreation">
@@ -68,17 +72,17 @@
           <li class="recreation__item">
             <img class="recreation-housing" src="img/icon-house.svg" alt="ЖИЛЬЕ">
             <b class="recreation__housing">ЖИЛЬЕ</b>
-            <p class="recreation__text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+            <p class="recreation-housing__text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
           </li>
           <li class="recreation__item">
             <img class="recreation-souvenir" src="img/icon-gift.svg" alt="СУВЕНИРЫ">
             <b class="recreation__souvenir">СУВЕНИРЫ</b>
-            <p class="recreation__text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+            <p class="recreation-souvenir__text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
           </li>
           <li class="recreation__item">
             <img class="recreation-food" src="img/icon-burger.svg" alt="ЕДА">
             <b class="recreation__food">ЕДА</b>
-            <p class="recreation__text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+            <p class="recreation-food__text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
           </li>
         </ul>
       </div>
@@ -91,7 +95,12 @@
           <p class="second-criterion__number">- №2 -</p>
           <p class="second-criterion__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
         </div>
-        <img class="second-criterion__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+            <img class="second-criterion__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260"
+            alt="НАСТОЯЩИЙ ГОРОДОК">
+        </picture>
       </div>
     </section>
     <section class="sedona-advantages">
