@@ -1,7 +1,9 @@
 .photo-video {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   margin-top: -32px;
+  border-bottom: 1px solid@color-gray-backround ;
 }
 .photo-video__slogan {
   display: block;
@@ -15,32 +17,68 @@
   padding-top: 13px;
   padding-left: 24px;
   padding-right: 22px;
-  padding-bottom: 26px;
+  padding-bottom: 11px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
 }
 .photo-video__image {
- position: relative;
- width: 320px;
- height: 157px;
+
+  width: 320px;
+  height: 157px;
 }
-.photo-video__text {
+.photo-video::before {
+  content:"";
   position: absolute;
-  top: 331px;
-  left: 190px;
-  width: 235px;
-  height: 39px;
+  top: 50px;
+  left: 45px;
+  width: 233px;
+  height: 40px;
+  background-image: url(../img/text-sedona.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (min-width: @tablet-width) {
 .photo-video {
+  position: relative;
   margin-top: 0;
   width: @tablet-width;
 }
 .photo-video__image {
   width: @tablet-width;
+  height: 290px;
   }
+.photo-video::before {
+  content:"";
+  position: absolute;
+  top: 94px;
+  left: 157px;
+  width: 457px;
+  height: 79px;
+  background-image: url(../img/text-sedona.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
+ .photo-video__slogan {
+  display: block;
+  padding-top: 69px;
+  padding-left: 4px;
+  font-size  : 30px;
+  line-height: 26px;
+  text-align: center;
+}
+.photo-video__intro {
+  padding-top: 17px;
+  padding-left: 168px;
+  padding-right: 165px;
+  padding-bottom:54px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
 }
 @media (min-width: @desktop-width) {
 .photo-video {
@@ -48,5 +86,35 @@
   }
 .photo-video__image {
   width: @desktop-width;
+  height: 301px;
   }
+.photo-video::before {
+  content:"";
+  position: absolute;
+  top:101px;
+  left: 372px;
+  width: 457px;
+  height: 79px;
+  background-image: url(../img/text-sedona.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
+ .photo-video__slogan {
+  display: block;
+  padding-top: 106px;
+  padding-left: 0px;
+  font-size  : 30px;
+  line-height: 26px;
+  text-align: center;
+}
+.photo-video__intro {
+  padding-top: 17px;
+  padding-left: 377px;
+  padding-right: 377px;
+  padding-bottom:55px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
 }

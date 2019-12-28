@@ -21,16 +21,16 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list ">
-          <li class="main-nav__item main__item">
+          <li class="main-nav__item-main">
             <a href="index.html">ГЛАВНАЯ</a>
           </li>
-          <li class="main-nav__item photo__item">
-            <a >ФОТО И ВИДЕО</a>
+          <li class="main-nav__item-photo">
+            <a>ФОТО И ВИДЕО</a>
           </li>
-          <li class="main-nav__item form__item">
+          <li class="main-nav__item-form">
             <a href="form.html">ФОРМА ОТЗЫВА</a>
           </li>
-          <li class="main-nav__item link__item">
+          <li class="main-nav__item-link">
             <a href="//htmlacademy.ru">HTMLACADEMY</a>
           </li>
         </ul>
@@ -42,55 +42,78 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg">
         <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg">
-          <img class="photo-video__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
+        <img class="photo-video__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
       </picture>
-      <img class="photo-video__text" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
+
       <b class="photo-video__slogan">ФОТО И ВИДЕО</b>
-      <p class="photo-video__intro">НЕ МОЖИТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСОВ? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О
+      <p class="photo-video__intro">НЕ МОЖИТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСA? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О
         ПОЛИТИКЕ И ЭКОНОМИКЕ. </p>
 
     </div>
     <section class="catalog">
       <div class="catalog__wrapper">
         <ul class="catalog__list">
-          <li class="catalog__item">
+          <li class="catalog__item-spaces">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-                <img class="catalog__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
-              alt=" НЕРОДНЫЕ ПРОСТОРЫ">
+              <img class="catalog__image-spaces" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+                alt=" НЕРОДНЫЕ ПРОСТОРЫ">
             </picture>
-
-            <b class="catalog__text">НЕРОДНЫЕ ПРОСТОРЫ</b>
-            <p class="catalog__author-pictur">
-              Автор фото:Борис
-            </p>
+            <div class="catalog__container">
+              <b class="catalog__text">НЕРОДНЫЕ ПРОСТОРЫ</b>
+              <p class="catalog__author-pictur">
+                Автор фото: Борис
+              </p>
+              <p class="catalog__number">1350</p>
+            </div>
           </li>
-          <li class="catalog__item">
-            <img class="catalog__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
-              alt="МЕСТНАЯ РАСТИТЕЛЬНОСТЬ">
-            <b class="catalog__text">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</b>
-            <p class="catalog__author-pictur">
-              Автор фото:Сергей
-            </p>
+          <li class="catalog__item-vegetation">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                <img class="catalog__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
+                alt="МЕСТНАЯ РАСТИТЕЛЬНОСТЬ">
+            </picture>
+            <div class="catalog__container">
+              <b class="catalog__text">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</b>
+              <p class="catalog__author-pictur">
+                Автор фото: Сергей
+              </p>
+              <p class="catalog__number-vegetation">143</p>
+            </div>
           </li>
 
-          <li class="catalog__item">
-            <img class="catalog__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
+          <li class="catalog__item-road">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                <img class="catalog__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
               alt="ДОРОГА НА СЕВЕР">
-            <b class="catalog__text">ДОРОГА НА СЕВЕР</b>
-            <p class="catalog__author-pictur">
-              Автор фото:Петр
-            </p>
+            </picture>
+            <div class="catalog__container">
+              <b class="catalog__text">ДОРОГА НА СЕВЕР</b>
+              <p class="catalog__author-pictur">
+                Автор фото: Петр
+              </p>
+              <p class="catalog__number-road">96</p>
+            </div>
           </li>
 
-          <li class="catalog__item">
-            <img class="catalog__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280"
-              alt="МОСТ ДЬЯВОЛА">
-            <b class="catalog__text">МОСТ ДЬЯВОЛА</b>
-            <p class="catalog__author-pictur">
-              Автор фото:Антон
-            </p>
+          <li class="catalog__item-bridge">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                <img class="catalog__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280"
+                alt="МОСТ ДЬЯВОЛА">
+            </picture>
+            <div class="catalog__container">
+              <b class="catalog__text">МОСТ ДЬЯВОЛА</b>
+              <p class="catalog__author-pictur">
+                Автор фото: Антон
+              </p>
+              <p class="catalog__number-bridge">254</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -102,13 +125,16 @@
       <p class="social__text">#VISITSEDONA</p>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><span
+              class="visually-hidden">Мы в Вконтакте</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке<span class="visually-hidden"></span></a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+              class="visually-hidden">Мы в Фейсбуке<span class="visually-hidden"></span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><span
+              class="visually-hidden">Мы в Инстаграме</span></a>
         </li>
       </ul>
     </div>
@@ -126,7 +152,7 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
