@@ -1,0 +1,185 @@
+.impression {
+  width: 320px;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid @color-gray-background ;
+}
+
+.impression__heading {
+  display: block;
+  padding-top: 13px;
+  padding-right: 28px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.impression__list {
+  margin: 0;
+  margin-top: -7px;
+  margin-bottom: 42px;
+  padding: 0;
+  list-style: none;
+
+}
+
+.impression__item {
+
+  padding-top: 44px;
+  padding-left: 87px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.impression__item label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+.impression-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -78px;
+  min-width: 54px;
+  min-height: 54px;
+  border-radius: 50%;
+  background-color:  @color-gray-background;
+
+}
+.impression-input-radio:checked + label::after {
+  content:"";
+  position: absolute;
+
+  top: 3px;
+  left: -61px;
+  min-width: 21px;
+  min-height: 21px;
+  border-radius: 50%;
+  background-color:  #000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (min-width: @tablet-width) {
+.impression {
+
+  width: 50%;
+  margin: 0;
+  padding-left: 0;
+  order: 0;
+  border: none;
+}
+.impression__heading {
+  display: block;
+  padding-top: 52px;
+  padding-right:0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.impression__list {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 88px;
+  padding: 0;
+  list-style: none;
+}
+.impression__item {
+  padding-top: 53px;
+  padding-left: 138px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.impression__item label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+.impression-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -78px;
+  min-width: 54px;
+  min-height: 54px;
+  border-radius: 50%;
+  background-color:  @color-gray-background;
+
+}
+
+}
+@media(min-width:@desktop-width) {
+  .impression {
+
+    width: 49%;
+    margin: 0;
+    padding-left: 0;
+    order: 0;
+    border: none;
+  }
+  .impression__heading {
+    display: block;
+    padding-top: 36px;
+    padding-left: 83px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .impression__list {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 88px;
+    padding: 0;
+    list-style: none;
+  }
+  .impression__item {
+    padding-top: 53px;
+    padding-left:200px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  .impression__item label {
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+  }
+  .impression-input-radio + label::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -76px;
+    min-width: 54px;
+    min-height: 54px;
+    border-radius: 50%;
+    background-color:  @color-gray-background;
+
+  }
+  .impression-input-radio:checked + label::after {
+    content:"";
+    position: absolute;
+
+    top: 5px;
+    left: -59px;
+    min-width: 21px;
+    min-height: 21px;
+    border-radius: 50%;
+    background-color:  #000;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

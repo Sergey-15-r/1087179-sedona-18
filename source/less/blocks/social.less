@@ -20,7 +20,7 @@
   min-width: 46px;
   min-height: 46px;
   margin-right: 6px;
-  background-color:@color-blue-background;
+  background-color: @color-blue-background;
 
 }
 .social__link--twitter::before {
@@ -53,7 +53,7 @@
   content: "";
     position: absolute;
     top: 16px;
-    left: 15px;
+    left: 14px;
     width: 20px;
     height: 14px;
     background-image: url(../img/icon-youtube.svg);
@@ -63,17 +63,24 @@
 .social__item a[href]{
 
   &:hover {
-
-
     background-color: #669ec0;
   }
 
   &:active {
-
-
-
+    background-color:#5496bd ;
   }
 }
+.social__link--youtube:active::before {
+  opacity: 0.3;
+}
+.social__link--facebook:active::before {
+  opacity: 0.3;
+}
+.social__link--twitter:active::before {
+  opacity: 0.3;
+}
+
+
 
 @media (min-width: @tablet-width) {
 

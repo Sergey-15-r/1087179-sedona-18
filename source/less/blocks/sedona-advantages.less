@@ -10,6 +10,9 @@
   padding: 0;
   list-style: none;
 }
+.sedona-advantages__item {
+  background-color: @color-gray-background;
+}
 
 @media(min-width:@tablet-width){
   .sedona-advantages {
@@ -18,10 +21,17 @@
   .sedona-advantages__list {
     display: flex;
   }
+  .sedona-advantages__item {
+    width: 256px;
+  }
 }
 
 @media(min-width:@desktop-width){
   .sedona-advantages {
     width: @desktop-width;
+  }
+  .sedona-advantages__item {
+    width: 400px;
+    padding-bottom: 23px;
   }
 }

@@ -1,0 +1,103 @@
+.review {
+  position: relative;
+  width: 320px;
+  margin:0 auto;
+  margin-top: -30px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid @color-gray-background ;
+}
+
+.review__image {
+  width: 320px;
+  height: 160px;
+}
+
+.review__slogan {
+  display: block;
+  padding-top: 28px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.review__intro {
+  padding-top: 13px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color:@color-gray-color ;
+
+}
+.review::before {
+  content:"";
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  width: 233px;
+  height: 40px;
+  background-image: url(../img/text-sedona.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+@media (min-width: @tablet-width) {
+.review {
+  width: @tablet-width;
+  margin-top: 0;
+  border: none;
+ }
+.review__image {
+  width: @tablet-width;
+  height: 290px;
+ }
+ .review::before {
+  content:"";
+  position: absolute;
+  top: 94px;
+  left: 157px;
+  width: 457px;
+  height: 79px;
+  background-image: url(../img/text-sedona.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
+ .review__slogan {
+  padding-top: 69px;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+ }
+.review__intro {
+  padding-left: 164px;
+  padding-top: 17px;
+  padding-right: 169px;
+ }
+}
+@media(min-width:@desktop-width) {
+.review{
+  width: @desktop-width;
+
+
+}
+.review__image {
+  width: @desktop-width;
+  height: 301px;
+}
+.review::before {
+  content:"";
+  position: absolute;
+  top: 101px;
+  left: 372px;
+
+}
+.review__slogan {
+  padding-top: 106px;
+}
+.review__intro {
+  padding-left: 376px;
+  padding-top: 17px;
+  padding-right: 384px;
+  text-align: center;
+ }
+}

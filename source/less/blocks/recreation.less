@@ -115,6 +115,7 @@
 }
 @media (min-width: @tablet-width){
 .recreation{
+  position: relative;
   width:@tablet-width;
   }
 
@@ -133,8 +134,8 @@
 
   .recreation__souvenir {
     display: block;
-    padding-top: 144px;
-    padding-left: 0px;
+    padding-top: 143px;
+    padding-left: 1px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -144,7 +145,7 @@
   .recreation__food {
     display: block;
     padding-top: 143px;
-    padding-left: 6px;
+    padding-left: 1px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -164,8 +165,8 @@
   .recreation__souvenir-text {
     margin: 0;
     margin-top: 22px;
-    padding-left: 44px;
-    padding-right: 49px;
+    padding-left: 48px;
+    padding-right: 44px;
     color:@color-gray-color;
     font-size: 14px;
     line-height: 21px;
@@ -202,16 +203,18 @@
   }
 
   .recreation__item-souvenir {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+
     width: 256px;
     padding-bottom: 46px
   }
   .recreation__item-souvenir::before{
-
     content: "";
     position: absolute;
-    top: 39px;
-    left: 96px;
+    top: 41px;
+    left: 95px;
     width: 64px;
     height: 75px;
     background-image: url(../img/icon-gift.svg);
@@ -229,7 +232,7 @@
     content: "";
     position: absolute;
     top: 49px;
-    left: 88px;
+    left: 90px;
     width: 77px;
     height: 68px;
     background-image: url(../img/icon-burger.svg);
@@ -253,8 +256,8 @@
 
   }
   .recreation__souvenir-text {
-    padding-left: 89px;
-    padding-right: 118px
+    padding-left: 114px;
+    padding-right: 94px
   }
   .recreation__food-text {
     margin-top: 22px;
@@ -302,7 +305,9 @@
   }
 
   .recreation__item-souvenir {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 400px;
     padding-bottom: 67px;
   }
@@ -311,7 +316,7 @@
     content: "";
     position: absolute;
     top: 39px;
-    left: 161px;
+    left: 167px;
     width: 64px;
     height: 75px;
     background-image: url(../img/icon-gift.svg);

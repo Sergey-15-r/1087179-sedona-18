@@ -21,44 +21,160 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list ">
-          <li class="main-nav__item main__item">
+          <li class="main-nav__item-main">
             <a href="index.html">ГЛАВНАЯ</a>
           </li>
-          <li class="main-nav__item photo__item">
+          <li class="main-nav__item-photo">
             <a href="photo.html">ФОТО И ВИДЕО</a>
           </li>
-          <li class="main-nav__item form__item">
-            <a >ФОРМА ОТЗЫВА</a>
+          <li class="main-nav__item-form">
+            <a>ФОРМА ОТЗЫВА</a>
           </li>
-          <li class="main-nav__item link__item">
+          <li class="main-nav__item-link">
             <a href="//htmlacademy.ru">HTMLACADEMY</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+  <main class="page-main">
+    <div class="review">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg">
+        <img class="review__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
+      </picture>
+      <b class="review__slogan">ОСТАВЬТЕ СВОЙ ОТЗЫВ</b>
+
+      <p class="review__intro"> ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ
+        ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ </p>
+    </div>
+      <form class="page-form">
+      <div class="introduce-yourself">
+        <h3 class="introduce-yourself__heading">ПРЕДСТАВТЕСЬ:</h3>
+        <p class="introduce-yourself__item">
+          <label for="name">ИМЯ*:</label>
+          <input type="text" class="introduce-yourself__field-name" name="user-name" id="form-name"
+            placeholder="Петр" />
+        </p>
+        <p class="introduce-yourself__item">
+          <label for="surname">ФАМИЛИЯ*:</label>
+          <input type="text" class="introduce-yourself__field" name="user-surname" id="form-surname"
+            placeholder="Иванов" />
+        </p>
+        <p class="introduce-yourself__item">
+          <label for="patronymic">ОТЧЕСТВО*:</label>
+          <input type="text" class="introduce-yourself__field" name="user-patronymic" id="form-patronymic"
+            placeholder="Александрович" />
+        </p>
+      </div>
+      <fieldset class="contact">
+        <h3 class="contact__heading">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
+        <div>
+        <p class="contact__tel">
+          <label class="contact__text-desktop" for="tel">Телефон*:</label>
+          <label class="contact__text-tel" for="tel">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+          <input type="tel" value="" class="contact__field" name="tel" id="tel-form" placeholder="Введите телефон" />
+          <img class="contact__image" src="img/icon-phone.svg">
+        </p>
+        <p class="contact__email">
+          <label class="contact__text" for="email-form">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+          <input type="email" value="" class="contact__field" name="email" id="email-form"
+            placeholder="Введите e-mail" />
+          <img class="contact__image-email" src="img/icon-mail.svg">
+        </p>
+        </div>
+      </fieldset>
+      <fieldset class="impression">
+        <div class="impression__wrapper">
+          <legend class="impression__heading">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <input class="visually-hidden impression-input-radio" type="radio" name="your-overall-impression" value="positive" id="filter-positive" checked>
+              <label for="filter-positive">Скорее положительное</label>
+            </li>
+            <li class="impression__item">
+              <input class="visually-hidden impression-input-radio " type="radio" name="your-overall-impression" value="negative" id="filter-negative">
+              <label for="filter-negative">Скорее отрицательное</label>
+            </li>
+            <li class="impression__item">
+              <input class="visually-hidden impression-input-radio" type="radio" name="your-overall-impression" value="i-find-it-difficult" id="filter-answer">
+              <label for="filter-answer">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="attractions">
+        <div class="attractions__wrapper">
+          <legend class="attractions__heading">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+          <ul class="attractions__list">
+            <li class="attractions__item">
+
+              <input class="visually-hidden  attractions-input-checkbox " type="checkbox" name="devil's-bridge" id="devil's-bridge" checked >
+              <label for="devil's-bridge">Мост Дьявола </label>
+            </li>
+            <li class="attractions__item-bell">
+
+              <input class="visually-hidden attractions-input-checkbox  " type="checkbox"  name="bell-mountain" id="bell-mountain" checked>
+              <label for="bell-mountain" >Гора-Колокол</label>
+            </li>
+            <li class="attractions__item-park">
+
+              <input class="visually-hidden   attractions-input-checkbox " type="checkbox"  name="slide-park" id="slide-park" checked>
+              <label for="slide-park" >Слайд-парк</label>
+            </li>
+            <li class="attractions__item-rocks">
+
+              <input class="visually-hidden  attractions-input-checkbox " type="checkbox"  name="red-rocks" id="red-rocks">
+              <label for="red-rocks" >Красные скалы</label>
+            </li>
+          </ul>
+      </fieldset>
+      <div class="form-description">
+        <div class="form-description__wrapper">
+          <h3 class="form-description__heading">ОПИШИТЕ СВОИ ЭМОЦИИ:</h3>
+          <p>
+            <textarea class="form-description__field" rows="5" cols="45" name="message" id="text-form"
+              placeholder="Опишите подробно все свои восторги "></textarea>
+          </p>
+        </div>
+      </div>
+       <div class="page-form__submit-wrapper">
+        <button type="submit" class="page-form__button">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p class="page-form__notification">* — обязательные поля</p>
+       </div>
+    </form>
+    </div>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__social social">
       <p class="social__text">#VISITSEDONA</p>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><span
+              class="visually-hidden">Мы в Вконтакте</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке<span class="visually-hidden"></span></a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+              class="visually-hidden">Мы в Фейсбуке<span class="visually-hidden"></span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><span
+              class="visually-hidden">Мы в Инстаграме</span></a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">РАЗРАБОТАНО</b>
+      <p class="copyright__text">РАЗРАБОТАНО</p>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTMLACADEMY">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
+          enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path
+            d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
+        </svg>
       </a>
     </div>
-
   </footer>
   <script>
     var navMain = document.querySelector('.main-nav');
@@ -66,7 +182,7 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');

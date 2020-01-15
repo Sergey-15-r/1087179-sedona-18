@@ -9,19 +9,19 @@
    padding: 0;
  }
  .catalog__item-spaces {
-   border-bottom: 1px solid@color-gray-backround ;
+   border-bottom: 1px solid @color-gray-background ;
  }
  .catalog__item-vegetation{
    padding-top: 15px;
-   border-bottom: 1px solid@color-gray-backround ;
+   border-bottom: 1px solid @color-gray-background ;
  }
  .catalog__item-road {
    padding-top: 15px;
-   border-bottom: 1px solid@color-gray-backround ;
+   border-bottom: 1px solid @color-gray-background ;
  }
  .catalog__item-bridge {
    padding-top: 15px;
-   border-bottom: 1px solid@color-gray-backround ;
+   border-bottom: 1px solid @color-gray-background ;
  }
  .catalog__image-spaces{
   padding-top: 8px;
@@ -57,6 +57,7 @@
    font-size: 14px;
    line-height: 24px;
    font-weight: bold;
+
  }
  .catalog__number-vegetation {
   position: relative;
@@ -67,6 +68,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+
 }
 .catalog__number-road {
   position: relative;
@@ -77,6 +79,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+
 }
 .catalog__number-bridge {
   position: relative;
@@ -87,55 +90,36 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+
 }
- .catalog__number::before{
-  content: "";
+.catalog__container {
+  position: relative;
+}
+.catalog__spaces-image {
   position: absolute;
-  top: 6px;
-  left: 19px;
-  width: 23px;
-  height: 21px;
-  background-image: url(../img/icon-like.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0 0;
- }
- .catalog__number-vegetation::before{
-  content: "";
+  top: 64px;
+  left: 20px;
+  fill:@color-gray-color ;
+}
+.catalog__vegetation-image {
   position: absolute;
-  top: 6px;
-  left: 19px;
-  width: 23px;
-  height: 21px;
-  background-image: url(../img/icon-like.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0 0;
- }
- .catalog__number-road::before{
-  content: "";
+  top: 64px;
+  left: 20px;
+  fill:@color-gray-color ;
+}
+.catalog__road-image {
   position: absolute;
-  top: 6px;
-  left: 19px;
-  width: 23px;
-  height: 21px;
-  background-image: url(../img/icon-like.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0 0;
- }
- .catalog__number-bridge::before{
-  content: "";
+  top: 64px;
+  left: 20px;
+  fill:@color-gray-color ;
+}
+.catalog__bridge-image {
   position: absolute;
-  top: 6px;
-  left: 19px;
-  width: 23px;
-  height: 21px;
-  background-image: url(../img/icon-like.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0 0;
- }
+  top: 64px;
+  left: 20px;
+  fill:@color-gray-color ;
+}
+
  @media (min-width: @tablet-width) {
    .catalog {
      width: @tablet-width;
@@ -155,44 +139,39 @@
 
      width: 648px;
     border-bottom:none;
-    background-color:#f2f2f2 ;
+    background-color: @color-white-bg ;
   }
   .catalog__item-vegetation{
     padding-top: 0;
     border-bottom: none ;
-    background-color:#f2f2f2 ;
+    background-color: @color-white-bg ;
   }
   .catalog__item-road {
     padding-top:0;
     border-bottom: none;
-    background-color:#f2f2f2 ;
+    background-color: @color-white-bg ;
   }
   .catalog__item-bridge {
     padding-top: 0;
     border-bottom: none ;
-    background-color:#f2f2f2 ;
+    background-color: @color-white-bg ;
   }
   .catalog__container {
     position: relative;
   }
   .catalog__author-pictur {
-    padding-bottom: 16px;
+    padding-bottom: 18px;
   }
   .catalog__number {
     position: absolute;
-    top: 15px;
+    top: 16px;
     right: 22px;
     padding-left: 52px;
   }
-  .catalog__number::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 19px
-  }
+
   .catalog__number-vegetation {
     position: absolute;
-    top: 17px;
+    top: 15px;
     right: 28px;
     margin: 0;
     padding-left: 52px;
@@ -202,21 +181,10 @@
     line-height: 24px;
     font-weight: bold;
   }
-  .catalog__number-vegetation::before{
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 19px;
-    width: 23px;
-    height: 21px;
-    background-image: url(../img/icon-like.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-   }
+
    .catalog__number-road {
     position: absolute;
-    top: 17px;
+    top: 16px;
     right: 36px;
     margin: 0;
     padding-left: 52px;
@@ -226,21 +194,10 @@
     line-height: 24px;
     font-weight: bold;
   }
-  .catalog__number-road::before{
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 19px;
-    width: 23px;
-    height: 21px;
-    background-image: url(../img/icon-like.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-   }
+
    .catalog__number-bridge {
     position: absolute;
-    top: 19px;
+    top: 16px;
     right: 29px;
     margin: 0;
     padding-left: 52px;
@@ -250,18 +207,7 @@
     line-height: 24px;
     font-weight: bold;
   }
-  .catalog__number-bridge::before{
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 19px;
-    width: 23px;
-    height: 21px;
-    background-image: url(../img/icon-like.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-   }
+
 
    .catalog__image-spaces {
      width: 648px;
@@ -272,6 +218,29 @@
     width  : 324px;
     height: 267px;
     padding: 0;
+  }
+  .catalog__spaces-image {
+
+    top: 23px;
+    left: 565px;
+
+  }
+  .catalog__vegetation-image {
+
+    top: 24px;
+    left: 240px;
+  }
+  .catalog__road-image {
+
+    top: 24px;
+    left: 240px;
+
+  }
+  .catalog__bridge-image {
+
+    top: 24px;
+    left: 240px;
+
   }
  }
 
@@ -297,26 +266,53 @@
      width: 400px;
    }
    .catalog__container {
-    margin-top: -79px;
+    margin-top: -83px;
     background-color: rgba(0, 0, 0, 0.3);
    }
    .catalog__text {
-     color: white;
+    padding-top: 14px;
+     color: @color-white-color;
    }
    .catalog__author-pictur {
-     color: white;
+     color: @color-white-color;
    }
    .catalog__number {
-     color: white;
+     top: 20px;
+     color: @color-white-color;
    }
 
    .catalog__number-vegetation {
-     color: white;
+
+     color: @color-white-color;
    }
    .catalog__number-road {
-     color: white;
+     color: @color-white-color;
    }
    .catalog__number-bridge {
-     color: white;
+     color: @color-white-color;
    }
+   .catalog__spaces-image {
+
+    top: 27px;
+    left: 1117px;
+    fill: @color-white-background;
+  }
+
+  .catalog__vegetation-image {
+    top: 25px;
+    left: 316px;
+    fill: @color-white-background;
+  }
+
+  .catalog__road-image {
+    top: 25px;
+    left: 316px;
+    fill: @color-white-background;
+  }
+
+  .catalog__bridge-image {
+    top: 25px;
+    left: 316px;
+    fill: @color-white-background;
+  }
  }

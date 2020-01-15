@@ -10,7 +10,12 @@ a {
   text-decoration: none;
   color:@color-white-color
 }
-.visually-hidden:not(:focus):not(:active) {
+form {
+  position: relative;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
