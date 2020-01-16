@@ -2,16 +2,28 @@
   width: 320px;
   margin: 0 auto;
   background-color: @color-blue-background;
-  color: white;
+  color:@color-white-color ;
 }
 
 .criterion__container {
+  position: relative;
   margin-top: 26px;
   padding-top: 56px;
   padding-right: 27px;
   padding-bottom: 41px;
   padding-left: 28px;
 }
+.criterion__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 59px;
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
 
 .criterion__city {
   margin: 0;
@@ -54,6 +66,10 @@
     padding-bottom: 49px;
     padding-left: 42px;
   }
+  .criterion__container::before {
+    content: "";
+    display: none;
+   }
   .criterion__city {
     margin: 0;
     font-size: 21px;

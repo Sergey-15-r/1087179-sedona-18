@@ -62,7 +62,7 @@
 
   padding: 0;
   padding-left: 18px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   list-style: none;
 }
 .recreation__item-housing {
@@ -121,6 +121,7 @@
 
 .recreation__list{
   display: flex;
+  flex-direction: inherit;
   padding: 0;
   }
   .recreation__housing {
@@ -203,12 +204,11 @@
   }
 
   .recreation__item-souvenir {
-    position: absolute;
-    top: 0;
-    right: 0;
+
 
     width: 256px;
-    padding-bottom: 46px
+    padding-bottom: 46px;
+    order: 1;
   }
   .recreation__item-souvenir::before{
     content: "";

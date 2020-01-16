@@ -49,7 +49,8 @@
       <p class="review__intro"> ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ
         ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ </p>
     </div>
-      <form class="page-form">
+      <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
+
       <div class="introduce-yourself">
         <h3 class="introduce-yourself__heading">ПРЕДСТАВТЕСЬ:</h3>
         <p class="introduce-yourself__item">
@@ -75,19 +76,18 @@
           <label class="contact__text-desktop" for="tel">Телефон*:</label>
           <label class="contact__text-tel" for="tel">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
           <input type="tel" value="" class="contact__field" name="tel" id="tel-form" placeholder="Введите телефон" />
-          <img class="contact__image" src="img/icon-phone.svg">
         </p>
         <p class="contact__email">
           <label class="contact__text" for="email-form">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
           <input type="email" value="" class="contact__field" name="email" id="email-form"
             placeholder="Введите e-mail" />
-          <img class="contact__image-email" src="img/icon-mail.svg">
+
         </p>
         </div>
       </fieldset>
       <fieldset class="impression">
         <div class="impression__wrapper">
-          <legend class="impression__heading">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+          <p class="impression__heading">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</p>
           <ul class="impression__list">
             <li class="impression__item">
               <input class="visually-hidden impression-input-radio" type="radio" name="your-overall-impression" value="positive" id="filter-positive" checked>
@@ -106,7 +106,7 @@
       </fieldset>
       <fieldset class="attractions">
         <div class="attractions__wrapper">
-          <legend class="attractions__heading">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+          <p class="attractions__heading">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</p>
           <ul class="attractions__list">
             <li class="attractions__item">
 
@@ -129,6 +129,7 @@
               <label for="red-rocks" >Красные скалы</label>
             </li>
           </ul>
+        </div>
       </fieldset>
       <div class="form-description">
         <div class="form-description__wrapper">
@@ -144,7 +145,6 @@
         <p class="page-form__notification">* — обязательные поля</p>
        </div>
     </form>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__social social">
@@ -156,7 +156,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
-              class="visually-hidden">Мы в Фейсбуке<span class="visually-hidden"></span></a>
+              class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><span

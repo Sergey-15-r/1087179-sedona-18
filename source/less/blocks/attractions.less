@@ -6,7 +6,8 @@
 }
 
 .attractions__heading {
-  padding-top: 3px;
+  margin: 0;
+  padding-top: 13px;
   padding-right: 28px;
   font-size: 18px;
   line-height: 26px;
@@ -17,7 +18,7 @@
   margin: 0;
   margin-top: -23px;
   padding: 0;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -95,7 +96,15 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
+.attractions-input-checkbox + label:hover::before {
+  background-color:#e5e5e5 ;
+}
+.attractions-input-checkbox + label:active::before {
+  background-color:#d5d5d5 ;
+}
+.attractions-input-checkbox + label:active::after {
+ opacity:0.3 ;
+}
 @media (min-width: @tablet-width) {
 .attractions {
   position: relative;

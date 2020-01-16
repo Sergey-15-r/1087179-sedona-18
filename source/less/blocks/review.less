@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   margin:0 auto;
-  margin-top: -30px;
+  margin-top: -33px;
   padding-bottom: 2px;
   border-bottom: 1px solid @color-gray-background ;
 }
@@ -14,7 +14,7 @@
 
 .review__slogan {
   display: block;
-  padding-top: 28px;
+  padding-top: 31px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -40,6 +40,18 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.review::after {
+  content: "";
+  position: absolute;
+  top: 135px;
+  left: 0;
+  width: 320px;
+  height: 59px;
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
+
 @media (min-width: @tablet-width) {
 .review {
   width: @tablet-width;
@@ -59,6 +71,17 @@
   height: 79px;
   background-image: url(../img/text-sedona.svg);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
+ .review::after {
+  content: "";
+  position: absolute;
+  top: 233px;
+  left: 0;
+  width:@tablet-width;
+  height: 59px;
+  background-image: url(../img/bg-intro-triangle-tablet.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
  }
@@ -91,6 +114,17 @@
   left: 372px;
 
 }
+.review::after {
+  content: "";
+  position: absolute;
+  top: 244px;
+  left: 0;
+  width: @desktop-width;
+  height: 59px;
+  background-image: url(../img/bg-intro-triangle-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
 .review__slogan {
   padding-top: 106px;
 }
