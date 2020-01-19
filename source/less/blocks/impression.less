@@ -60,15 +60,15 @@
   min-width: 21px;
   min-height: 21px;
   border-radius: 50%;
-  background-color:  #000;
+  background-color:  @color-black-bg;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 .impression-input-radio + label:hover::before {
-  background-color:#e5e5e5 ;
+  background-color:@color-white-hover;
 }
 .impression-input-radio + label:active::before {
-  background-color:#d5d5d5 ;
+  background-color:@color-white-activ ;
 }
 .impression-input-radio:checked + label:active::after {
  opacity:0.3 ;
@@ -79,8 +79,11 @@
   width: 50%;
   margin: 0;
   padding-left: 0;
+  padding-right: 0;
   order: 0;
   border: none;
+  border-right: 1px solid @color-gray-background ;
+  border-bottom: 1px solid @color-gray-background ;
 }
 .impression__heading {
   padding-top: 52px;
@@ -131,8 +134,11 @@
     width: 49%;
     margin: 0;
     padding-left: 0;
+    padding-right: 11px;
     order: 0;
     border: none;
+    border-right: 1px solid @color-gray-background ;
+    border-bottom: 1px solid @color-gray-background ;
   }
   .impression__heading {
 
@@ -185,7 +191,7 @@
     min-width: 21px;
     min-height: 21px;
     border-radius: 50%;
-    background-color:  #000;
+    background-color:  @color-black-bg;
     background-repeat: no-repeat;
     background-position: 0 0;
   }

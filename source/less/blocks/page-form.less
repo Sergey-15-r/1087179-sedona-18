@@ -21,12 +21,16 @@
   line-height: 26px;
   font-family: PT sans;
   font-weight: bold;
-  background-color: #81b3d2;
-  color: #ffff;
+  background-color:@color-blue-background;
+  color: @color-white-color;
   border: none;
 }
 .page-form__button:hover {
-  background-color: #669ec0;
+  background-color: @color-blue-hover;
+}
+.page-form__button:active {
+  color: rgba(255,255,255,.3);
+  background-color: @color-blue-activ;
 }
 .page-form__notification {
   display: none;

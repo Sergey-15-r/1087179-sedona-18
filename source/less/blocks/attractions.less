@@ -97,10 +97,10 @@
   background-position: 0 0;
 }
 .attractions-input-checkbox + label:hover::before {
-  background-color:#e5e5e5 ;
+  background-color:@color-white-hover ;
 }
 .attractions-input-checkbox + label:active::before {
-  background-color:#d5d5d5 ;
+  background-color:@color-white-activ ;
 }
 .attractions-input-checkbox + label:active::after {
  opacity:0.3 ;
@@ -116,9 +116,12 @@
   position: absolute;
   top: -32px;
   left: 14px;
+  margin-left: 170px;
+  margin-right: 183px;
   padding-top: 5px;
-  padding-left: 221px;
-  padding-right: 235px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: @color-white-background;
   font-size: 21px;
   line-height: 26px;
 }
