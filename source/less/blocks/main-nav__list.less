@@ -1,0 +1,123 @@
+.main-nav__list {
+  list-style: none;
+  margin    : 0 auto;
+  padding   : 0;
+
+}
+.main-nav__list a {
+  display: block;
+  color: @color-white-color;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  background-color: @color-blue-background;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.main-nav__list a[href] {
+  &:hover {
+    background-color: @color-blue-background;
+    border-top-color: @color-blue-background;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @color-blue-background;
+    border-top-color: @color-blue-background;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .main-nav__list {
+    display        : flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width          : @tablet-width;
+  }
+
+  .main-nav__list a {
+    padding: 0;
+    background: none;
+    color: @color-black;
+    border: none;
+  }
+  .main-nav__list a[href] {
+    &:hover {
+      color: @color-blue;
+
+      background-color: @color-white-background;
+    }
+
+    &:active {
+      color: @color-black;
+
+      background-color: @color-white-background;
+      opacity: 0.3;
+    }
+  }
+  .main-nav__item-main {
+
+    padding-top: 15px;
+    padding-right: 48px;
+    padding-bottom: 15px;
+    padding-left: 49px;
+  }
+  .main-nav__item-photo {
+
+    padding-top: 15px;
+    padding-right: 27px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+  }
+  .main-nav__item-form {
+
+    padding-top: 15px;
+    padding-right: 22px;
+    padding-bottom: 16px;
+    padding-left: 183px;
+
+  }
+  .main-nav__item-link{
+
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: @desktop-width;
+  }
+  .main-nav__item-main{
+
+    padding-top: 15px;
+    padding-right: 91px;
+    padding-bottom: 15px;
+    padding-left: 91px;
+  }
+  .main-nav__item-photo {
+
+    padding-top: 15px;
+    padding-right: 71px;
+    padding-bottom: 16px;
+    padding-left: 71px;
+  }
+  .main-nav__item-form {
+
+    padding-top: 15px;
+    padding-right: 69px;
+    padding-bottom: 16px;
+    padding-left: 312px;
+
+  }
+  .main-nav__item-link {
+
+    padding-top: 15px;
+    padding-right: 71px;
+    padding-bottom: 16px;
+    padding-left: 71px;
+  }
+}

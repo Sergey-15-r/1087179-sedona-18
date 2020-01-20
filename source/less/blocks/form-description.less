@@ -1,0 +1,117 @@
+.form-description{
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form-description__heading {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.form-description__field {
+  width: 253px;
+  margin-left: 19px;
+  margin-bottom: 30px;
+  padding-left: 23px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: PT Sans;
+  font-weight: bold;
+  border: none;
+  resize: none;
+  background-color: @color-gray-background;
+}
+.form-description__field:hover {
+  background-color: @color-grey-bg;
+ }
+ .form-description__field:focus {
+  outline: 0;
+  width: 247px;
+  margin-left: 19px;
+  margin-bottom: 27px;
+  padding-left: 20px;
+  padding-top: 13px;
+  background-color:@color-white-background ;
+  border: 3px solid @color-grey-bg;
+ }
+@media (min-width: @tablet-width) {
+.form-description {
+  position: relative;
+  width: @tablet-width;
+  order: 5;
+}
+.form-description__heading {
+  position: absolute;
+  top: -35px;
+  left: 185px;
+  font-size: 21px;
+  line-height: 26px;
+  padding-left: 74px;
+  padding-right: 76px;
+  background-color:@color-white-background ;
+}
+.form-description__field {
+  width: 625px;
+  margin-left: 61px;
+  margin-top: 54px;
+  margin-bottom: 37px;
+  padding-top: 16px;
+  padding-left: 20px ;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form-description__field:focus {
+
+  width: 622px;
+  margin-left: 61px;
+  margin-top: 54px;
+  margin-bottom: 37px;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-bottom: 12px;
+  background-color:@color-white-background ;
+  border: 3px solid @color-grey-bg;
+ }
+}
+@media(min-width:@desktop-width) {
+  .form-description {
+    width: @desktop-width;
+  }
+  .form-description__heading {
+    position: absolute;
+    top: -34px;
+    left: 474px;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .form-description__field {
+    width: 939px;
+    margin-left: 119px;
+    margin-top: 55px;
+    margin-bottom: 37px;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .form-description__field:focus {
+
+    width: 936px;
+    margin-left: 119px;
+    margin-top: 55px;
+    margin-bottom: 37px;
+    padding-top: 13px;
+    padding-left: 17px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 26px;
+    background-color:@color-white-background ;
+    border: 3px solid @color-grey-bg;
+   }
+}

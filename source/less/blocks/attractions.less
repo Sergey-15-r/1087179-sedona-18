@@ -1,0 +1,198 @@
+.attractions {
+  width: 320px;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid @color-gray-background ;
+}
+
+.attractions__heading {
+  margin: 0;
+  padding-top: 13px;
+  padding-right: 28px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.attractions__list {
+  margin: 0;
+  margin-top: -23px;
+  padding: 0;
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  list-style: none;
+
+}
+.attractions__item {
+  padding-left: 88px;
+  padding-top: 55px;
+}
+.attractions__item-bell {
+  padding-left: 88px;
+  padding-top: 55px;
+}
+.attractions__item-bell label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+.attractions__item label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+.attractions__item-park {
+  padding-left: 88px;
+  padding-top: 55px;
+}
+.attractions__item-park label{
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+.attractions__item-rocks {
+  padding-top: 55px;
+  padding-left: 88px;
+
+}
+.attractions__item-rocks label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none
+}
+.attractions-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -81px;
+  min-width: 55px;
+  min-height: 55px;
+  border-radius: 5%;
+  background-color:  @color-gray-background;
+}
+
+.attractions-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -63px;
+  width: 24px;
+  height: 16px;
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.attractions-input-checkbox + label:hover::before {
+  background-color:@color-white-hover ;
+}
+.attractions-input-checkbox + label:active::before {
+  background-color:@color-white-activ ;
+}
+.attractions-input-checkbox + label:active::after {
+ opacity:0.3 ;
+}
+@media (min-width: @tablet-width) {
+.attractions {
+  position: relative;
+  width: @tablet-width;
+  order: 4;
+
+}
+.attractions__heading {
+  position: absolute;
+  top: -32px;
+  left: 14px;
+  margin-left: 170px;
+  margin-right: 183px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: @color-white-background;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.attractions__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 19px;
+  margin-left: 129px;
+  margin-right: 131px;
+  margin-bottom: 57px;
+}
+.attractions__item {
+  margin-top: 3px;
+  padding-left: 95px;
+}
+.attractions__item-bell {
+ margin-top: 3px;
+ padding-left: 150px;
+}
+.attractions__item-park {
+ margin-top: 7px;
+ padding-left: 95px;
+
+}
+.attractions__item-rocks {
+ margin-top: 7px;
+ padding-left: 168px;
+}
+}
+@media(min-width:@desktop-width) {
+.attractions {
+    width: @desktop-width;
+    position: relative;
+    order: 4;
+
+  }
+.attractions__heading {
+  position: absolute;
+  top: -32px;
+  left: 14px;
+  padding-top: 5px;
+  padding-left: 446px;
+  padding-right: 462px;
+  font-size: 21px;
+  line-height: 26px;
+ }
+
+.attractions__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 19px;
+  margin-left: 89px;
+  margin-right: 100px;
+  margin-bottom: 54px;
+ }
+.attractions__item {
+  margin-top: 3px;
+  padding-left: 98px;
+  }
+.attractions__item-bell {
+  margin-top: 3px;
+  padding-left: 150px;
+}
+.attractions__item-park {
+  margin-top: 3px;
+  padding-left: 152px;
+
+  }
+.attractions__item-rocks {
+  margin-top: 3px;
+  padding-left: 145px;
+}
+}
