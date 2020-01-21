@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
   <header class="page-header">
     <a class="page-header__logo">
       <picture>
@@ -42,9 +43,9 @@
     <section class="description">
       <div class="description__container">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg">
-            <img class="description__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
+          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x,img/bg-back-tablet@2x.jpg 2x ">
+            <img class="description__image" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="СЕДОНА">
         </picture>
       <svg class="description__text" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="350.074px" viewBox="0 0 459.754 350.074" enable-background="new 0 0 459.754 350.074" xml:space="preserve">
         <g>
@@ -101,9 +102,9 @@
           <p class="criterion__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
-            <img class="criterion__image" src="img/main-city-mobile@1x.jpg" width="320" height="260"
+          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x,img/main-city-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+            <img class="criterion__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x"
             alt="НАСТОЯЩИЙ ГОРОДОК">
         </picture>
       </div>
@@ -135,9 +136,9 @@
           <p class="second-criterion__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
         </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-            <img class="second-criterion__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260"
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img class="second-criterion__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x"
             alt="НАСТОЯЩИЙ ГОРОДОК">
         </picture>
       </div>
@@ -174,9 +175,9 @@
          </button>
         <a>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-              <img class="hotel-search__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта" >
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img class="hotel-search__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="карта" >
           </picture>
         </a>
       </div>
@@ -206,6 +207,7 @@
       </a>
     </div>
   </footer>
+  </div>
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');

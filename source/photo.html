@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
@@ -40,9 +41,9 @@
   <main class="page-main">
     <div class="photo-video">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg">
-        <img class="photo-video__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
+        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+        <img class="photo-video__image" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="СЕДОНА">
       </picture>
 
       <b class="photo-video__slogan">ФОТО И ВИДЕО</b>
@@ -55,9 +56,9 @@
         <ul class="catalog__list">
           <li class="catalog__item-spaces">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-              <img class="catalog__image-spaces" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x ">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="catalog__image-spaces" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
                 alt=" НЕРОДНЫЕ ПРОСТОРЫ">
             </picture>
             <div class="catalog__container">
@@ -84,9 +85,9 @@
           </li>
           <li class="catalog__item-vegetation">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
-              <img class="catalog__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
                 alt="МЕСТНАЯ РАСТИТЕЛЬНОСТЬ">
             </picture>
             <div class="catalog__container">
@@ -113,9 +114,9 @@
           </li>
           <li class="catalog__item-road">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
-              <img class="catalog__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
                 alt="ДОРОГА НА СЕВЕР">
             </picture>
             <div class="catalog__container">
@@ -143,9 +144,9 @@
 
           <li class="catalog__item-bridge">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-              <img class="catalog__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280"
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
                 alt="МОСТ ДЬЯВОЛА">
             </picture>
             <div class="catalog__container">
@@ -207,6 +208,7 @@
       </a>
     </div>
   </footer>
+</div>
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
