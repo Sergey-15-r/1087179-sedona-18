@@ -118,14 +118,24 @@
 
 }
 .attractions__heading {
-  margin-left: 170px;
-  margin-right: 183px;
+
   padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: @color-white-background;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+  display: flex;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background-color: @color-gray-background;
+    height: 1px;
+    flex-grow: 1;
+    margin-top: 26px;
+    margin-left: 49px;
+    margin-right: 47px;
+}
 
 }
 
@@ -164,11 +174,29 @@
 .attractions__heading {
   margin: 0;
   padding-top: 6px;
-  padding-left: 446px;
-  padding-right: 462px;
   font-size: 21px;
   line-height: 26px;
- }
+  &::before {
+    content: "";
+    display: block;
+    background-color: @color-gray-background;
+    height: 1px;
+    flex-grow: 1;
+    margin-top: 26px;
+    margin-left: 109px;
+    margin-right: 62px;
+}
+&::after {
+  content: "";
+  display: block;
+  background-color: @color-gray-background;
+  height: 1px;
+  flex-grow: 1;
+  margin-top: 26px;
+  margin-left: 65px;
+  margin-right: 105px;
+}
+}
 
 .attractions__list {
   display: flex;
