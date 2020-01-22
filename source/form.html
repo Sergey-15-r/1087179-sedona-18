@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<div class="page-wrapper">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
@@ -40,9 +41,9 @@
   <main class="page-main">
     <div class="review">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg">
-        <img class="review__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="СЕДОНА">
+        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x,img/bg-back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x,img/bg-back-tablet@2x.jpg 2x">
+        <img class="review__image" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="СЕДОНА">
       </picture>
       <b class="review__slogan">ОСТАВЬТЕ СВОЙ ОТЗЫВ</b>
 
@@ -52,7 +53,7 @@
     <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
 
       <div class="introduce-yourself">
-        <h3 class="introduce-yourself__heading">ПРЕДСТАВТЕСЬ:</h3>
+        <h3 class="introduce-yourself__heading heading">ПРЕДСТАВТЕСЬ:</h3>
         <p class="introduce-yourself__item">
           <label for="form-name">ИМЯ*:</label>
           <input type="text" class="introduce-yourself__field-name" name="user-name" id="form-name"
@@ -70,8 +71,8 @@
         </p>
       </div>
       <fieldset class="contact">
-        <h3 class="contact__heading">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
-        <div>
+        <h3 class="contact__heading heading">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
+        <div class="contact__container">
           <p class="contact__tel">
             <label class="contact__text-desktop" for="form-tel">Телефон*:</label>
             <label class="contact__text-tel" for="form-tel">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
@@ -87,7 +88,7 @@
       </fieldset>
       <fieldset class="impression">
         <div class="impression__wrapper">
-          <p class="impression__heading">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</p>
+          <h3 class="impression__heading heading">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
           <ul class="impression__list">
             <li class="impression__item">
               <input class="visually-hidden impression-input-radio" type="radio" name="your-overall-impression"
@@ -109,7 +110,7 @@
       </fieldset>
       <fieldset class="attractions">
         <div class="attractions__wrapper">
-          <p class="attractions__heading">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</p>
+          <h3 class="attractions__heading heading">ПОСЕЩЕННЫЕ<br>ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h3>
           <ul class="attractions__list">
             <li class="attractions__item">
 
@@ -140,7 +141,7 @@
       </fieldset>
       <div class="form-description">
         <div class="form-description__wrapper">
-          <h3 class="form-description__heading">ОПИШИТЕ СВОИ ЭМОЦИИ:</h3>
+          <h3 class="form-description__heading heading">ОПИШИТЕ СВОИ ЭМОЦИИ:</h3>
           <p>
             <textarea class="form-description__field" rows="5" cols="45" name="message" id="text-form"
               placeholder="Опишите подробно все свои восторги "></textarea>
@@ -183,6 +184,7 @@
       </a>
     </div>
   </footer>
+</div>
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');

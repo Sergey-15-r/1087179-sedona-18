@@ -1,14 +1,19 @@
 .attractions {
   width: 320px;
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
   border: none;
   border-bottom: 1px solid @color-gray-background ;
+}
+.attractions__wrapper {
+  padding-left: 11px;
 }
 
 .attractions__heading {
   margin: 0;
-  padding-top: 13px;
-  padding-right: 28px;
+  padding-top: 15px;
+  padding-right: 13px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -107,32 +112,40 @@
 }
 @media (min-width: @tablet-width) {
 .attractions {
-  position: relative;
   width: @tablet-width;
+  border: none;
   order: 4;
 
 }
 .attractions__heading {
-  position: absolute;
-  top: -32px;
-  left: 14px;
-  margin-left: 170px;
-  margin-right: 183px;
+
   padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: @color-white-background;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+  display: flex;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background-color: @color-gray-background;
+    height: 1px;
+    flex-grow: 1;
+    margin-top: 26px;
+    margin-left: 49px;
+    margin-right: 47px;
+}
+
 }
 
 .attractions__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 19px;
+  margin-top: 0;
   margin-left: 129px;
   margin-right: 131px;
-  margin-bottom: 57px;
+  margin-bottom: 40px;
 }
 .attractions__item {
   margin-top: 3px;
@@ -155,29 +168,44 @@
 @media(min-width:@desktop-width) {
 .attractions {
     width: @desktop-width;
-    position: relative;
     order: 4;
 
   }
 .attractions__heading {
-  position: absolute;
-  top: -32px;
-  left: 14px;
-  padding-top: 5px;
-  padding-left: 446px;
-  padding-right: 462px;
+  margin: 0;
+  padding-top: 6px;
   font-size: 21px;
   line-height: 26px;
- }
+  &::before {
+    content: "";
+    display: block;
+    background-color: @color-gray-background;
+    height: 1px;
+    flex-grow: 1;
+    margin-top: 26px;
+    margin-left: 109px;
+    margin-right: 62px;
+}
+&::after {
+  content: "";
+  display: block;
+  background-color: @color-gray-background;
+  height: 1px;
+  flex-grow: 1;
+  margin-top: 26px;
+  margin-left: 65px;
+  margin-right: 105px;
+}
+}
 
 .attractions__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 19px;
   margin-left: 89px;
   margin-right: 100px;
-  margin-bottom: 54px;
+  margin-bottom: 39px;
  }
+
 .attractions__item {
   margin-top: 3px;
   padding-left: 98px;

@@ -23,6 +23,10 @@
   border: none;
   resize: none;
   background-color: @color-gray-background;
+
+  &::placeholder {
+    color:@color-black
+  }
 }
 .form-description__field:hover {
   background-color: @color-grey-bg;
@@ -39,24 +43,42 @@
  }
 @media (min-width: @tablet-width) {
 .form-description {
-  position: relative;
   width: @tablet-width;
   order: 5;
 }
 .form-description__heading {
-  position: absolute;
-  top: -35px;
-  left: 185px;
   font-size: 21px;
   line-height: 26px;
-  padding-left: 74px;
-  padding-right: 76px;
-  background-color:@color-white-background ;
+  margin-top: 3px;
+  text-align: center;
+
+  display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: @color-gray-background;
+    height: 1px;
+    flex-grow: 1;
+    margin-top: 15px;
+    margin-left: 58px;
+    margin-right: 74px;
+  }
+&::after {
+  content: "";
+  display: block;
+  background-color: @color-gray-background;
+  height: 1px;
+  flex-grow: 1;
+  margin-top: 15px;
+  margin-left: 77px;
+  margin-right: 58px;
+}
 }
 .form-description__field {
   width: 625px;
   margin-left: 61px;
-  margin-top: 54px;
+  margin-top: 39px;
   margin-bottom: 37px;
   padding-top: 16px;
   padding-left: 20px ;
@@ -68,7 +90,7 @@
 
   width: 622px;
   margin-left: 61px;
-  margin-top: 54px;
+  margin-top: 40px;
   margin-bottom: 37px;
   padding-top: 13px;
   padding-left: 17px;
@@ -82,17 +104,34 @@
     width: @desktop-width;
   }
   .form-description__heading {
-    position: absolute;
-    top: -34px;
-    left: 474px;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+    &::before {
+      content: "";
+      display: block;
+      background-color: @color-gray-background;
+      height: 1px;
+      flex-grow: 1;
+      margin-top: 15px;
+      margin-left: 120px;
+      margin-right: 74px;
+    }
+  &::after {
+    content: "";
+    display: block;
+    background-color: @color-gray-background;
+    height: 1px;
+    flex-grow: 1;
+    margin-top: 15px;
+    margin-left: 77px;
+    margin-right: 120px;
+  }
   }
   .form-description__field {
     width: 939px;
     margin-left: 119px;
-    margin-top: 55px;
+    margin-top: 38px;
     margin-bottom: 37px;
     padding-top: 16px;
     padding-left: 20px;
@@ -104,7 +143,7 @@
 
     width: 936px;
     margin-left: 119px;
-    margin-top: 55px;
+    margin-top: 38px;
     margin-bottom: 37px;
     padding-top: 13px;
     padding-left: 17px;

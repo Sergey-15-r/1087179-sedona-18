@@ -2,6 +2,8 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 27px;
   border: none;
   border-bottom: 1px solid @color-gray-background ;
@@ -9,7 +11,6 @@
 }
 .contact__heading {
   padding-top: 1px;
-  padding-right: 25px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -26,17 +27,20 @@
 .contact__text-desktop {
   display: none;
 }
+.contact__cotainer {
+  padding-left: 11px;
+}
 .contact__text {
   display: block;
   padding-top: 4px;
-  padding-left: 30px;
+  padding-left: 42px;
   font-size: 14px;
   line-height: 26px;
 }
 .contact__text-tel {
   display: block;
-  padding-top: 4px;
-  padding-left: 30px;
+  padding-top: 3px;
+  padding-left: 43px;
   font-size: 14px;
   line-height: 26px;
 }
@@ -44,7 +48,7 @@
 
   width: 202px;
   margin-top: 7px;
-  margin-left: 9px;
+  margin-left: 19px;
   padding-left: 21px;
   padding-top: 16px;
   padding-bottom: 17px;
@@ -53,6 +57,10 @@
   font-weight: bold;
   border: none;
   background-color: @color-white-bg;
+
+  &::placeholder {
+    color:@color-black
+  }
 }
 
 .contact__field:hover {
@@ -72,7 +80,7 @@
   content: "";
   position: absolute;
   top: 37px;
-  right: 31px;
+  right: 20px;
   min-width: 58px;
   min-height: 58px;
   background-color: @color-grey-bg;
@@ -81,7 +89,7 @@
   content: "";
   position: absolute;
   top: 56px;
-  right: 51px;
+  right: 39px;
   width: 18px;
   height: 18px;
   background-image: url(../img/icon-phone.svg);
@@ -93,7 +101,7 @@
   content: "";
   position: absolute;
   top: 45px;
-  right: 31px;
+  right: 20px;
   min-width: 58px;
   min-height: 58px;
   background-color: @color-grey-bg;
@@ -102,7 +110,7 @@
   content: "";
   position: absolute;
   top: 65px;
-  right: 51px;
+  right: 39px;
   width: 18px;
   height: 18px;
   background-image: url(../img/icon-mail.svg);
@@ -113,36 +121,46 @@
 @media (min-width: @tablet-width) {
   .contact {
     width: @tablet-width;
-    position: relative;
     order: 3;
-    padding-bottom: 64px;
+    padding-bottom: 28px;
+    border: none;
 
   }
   .contact__heading {
-    position: absolute;
-    top: -75px;
-    left: 183px;
     margin: 0;
-    padding: 61px;
+    margin-top: -4px;
     font-size: 21px;
     line-height: 26px;
-    background-color: @color-white-background;
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      background-color: @color-gray-background;
+      height: 1px;
+      flex-grow: 1;
+      margin-left: 62px;
+      margin-right: 62px;
   }
+ }
   .contact__tel {
     position: relative;
-    margin-top: 34px;
+    margin-top: 22px;
     margin-bottom: 0;
   }
 
   .contact__text {
-    padding-left: 70px;
+    padding-left: 81px;
+
   }
   .contact__text-tel {
-    padding-left: 70px;
+    padding-left: 82px;
   }
   .contact__field {
     width: 572px;
-    margin-left: 47px;
+    margin-left: 59px;
     margin-bottom: 12px;
   }
   .contact__image {
@@ -165,7 +183,7 @@
     content: "";
     position: absolute;
     top: 37px;
-    right: 48px;
+    right: 61px;
     min-width: 58px;
     min-height: 58px;
     background-color: @color-grey-bg;
@@ -174,7 +192,7 @@
     content: "";
     position: absolute;
     top: 57px;
-    right: 67px;
+    right: 79px;
     width: 18px;
     height: 18px;
     background-image: url(../img/icon-phone.svg);
@@ -186,7 +204,7 @@
     content: "";
     position: absolute;
     top: 45px;
-    right: 48px;
+    right: 61px;
     min-width: 58px;
     min-height: 58px;
     background-color: @color-grey-bg;
@@ -194,8 +212,8 @@
    .contact__email::after {
     content: "";
     position: absolute;
-    top: 66px;
-    right: 67px;
+    top: 64px;
+    right: 79px;
     width: 18px;
     height: 18px;
     background-image: url(../img/icon-mail.svg);
@@ -212,22 +230,38 @@
     display: flex;
   }
   .contact__heading {
-    position: absolute;
-    top: -15px;
-    left: 459px;
     margin: 0;
+    margin-top: -5px;
     font-size: 21px;
     line-height: 26px;
+    &::before {
+      content: "";
+      display: block;
+      background-color: @color-gray-background;
+      height: 1px;
+      flex-grow: 1;
+      margin-left: 120px;
+      margin-right: 62px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    background-color: @color-gray-background;
+    height: 1px;
+    flex-grow: 1;
+    margin-left: 64px;
+    margin-right: 119px;
+}
   }
   .contact__tel {
     position: relative;
-    margin-top: 28px;
+    margin-top: 16px;
     margin-bottom: 0;
   }
   .contact__email {
     position: relative;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 8px;
     padding-top: 8px;
   }
   .contact__text-tel {
@@ -236,7 +270,7 @@
   .contact__text-desktop {
     display: inline-block;
     padding-top: 4px;
-    padding-left: 105px;
+    padding-left: 120px;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
@@ -244,7 +278,7 @@
   }
   .contact__text {
     display: inline-block;
-    padding-left: 138px;
+    padding-left: 134px;
   }
   .contact__field {
     width: 239px;
@@ -261,7 +295,7 @@
     content: "";
     position: absolute;
     top: 59px;
-    right: -57px;
+    right: -55px;
     min-width: 58px;
     min-height: 58px;
     background-color: @color-grey-bg;
@@ -269,8 +303,8 @@
   .contact__tel ::after {
     content: "";
     position: absolute;
-    top: 79px;
-    right: -40px;
+    top: 80px;
+    right: -36px;
     width: 18px;
     height: 18px;
     background-image: url(../img/icon-phone.svg);
