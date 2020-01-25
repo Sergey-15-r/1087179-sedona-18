@@ -1,156 +1,169 @@
-.form-description{
-  width: 320px;
+.form-description {
+  width : 320px;
   margin: 0 auto;
 }
 
 .form-description__heading {
-  font-size: 18px;
+  font-size  : 18px;
   line-height: 26px;
-  text-align: center;
+  text-align : center;
 }
 
 .form-description__field {
-  width: 253px;
-  margin-left: 19px;
-  margin-bottom: 30px;
-  padding-left: 23px;
-  padding-top: 16px;
-  padding-bottom: 15px;
-  font-size: 18px;
-  line-height: 26px;
-  font-family: PT Sans;
-  font-weight: bold;
-  border: none;
-  resize: none;
+  width           : 253px;
+  margin-left     : 19px;
+  margin-bottom   : 30px;
+  padding-left    : 23px;
+  padding-top     : 16px;
+  padding-bottom  : 15px;
+  font-size       : 18px;
+  line-height     : 26px;
+  font-family     : PT Sans;
+  font-weight     : bold;
+  border          : none;
+  resize          : none;
   background-color: @color-gray-background;
 
   &::placeholder {
-    color:@color-black
+    color: @color-black
   }
 }
+
 .form-description__field:hover {
   background-color: @color-grey-bg;
- }
- .form-description__field:focus {
-  outline: 0;
-  width: 247px;
-  margin-left: 19px;
-  margin-bottom: 27px;
-  padding-left: 20px;
-  padding-top: 13px;
-  background-color:@color-white-background ;
-  border: 3px solid @color-grey-bg;
- }
-@media (min-width: @tablet-width) {
-.form-description {
-  width: @tablet-width;
-  order: 5;
 }
-.form-description__heading {
-  font-size: 21px;
-  line-height: 26px;
-  margin-top: 3px;
-  text-align: center;
 
-  display: flex;
-
-  &::before {
-    content: "";
-    display: block;
-    background-color: @color-gray-background;
-    height: 1px;
-    flex-grow: 1;
-    margin-top: 15px;
-    margin-left: 58px;
-    margin-right: 74px;
-  }
-&::after {
-  content: "";
-  display: block;
-  background-color: @color-gray-background;
-  height: 1px;
-  flex-grow: 1;
-  margin-top: 15px;
-  margin-left: 77px;
-  margin-right: 58px;
-}
-}
-.form-description__field {
-  width: 625px;
-  margin-left: 61px;
-  margin-top: 39px;
-  margin-bottom: 37px;
-  padding-top: 16px;
-  padding-left: 20px ;
-  padding-bottom: 15px;
-  font-size: 18px;
-  line-height: 26px;
-}
 .form-description__field:focus {
-
-  width: 622px;
-  margin-left: 61px;
-  margin-top: 40px;
-  margin-bottom: 37px;
-  padding-top: 13px;
-  padding-left: 17px;
-  padding-bottom: 12px;
-  background-color:@color-white-background ;
-  border: 3px solid @color-grey-bg;
- }
+  outline         : 0;
+  width           : 247px;
+  margin-left     : 19px;
+  margin-bottom   : 27px;
+  padding-left    : 20px;
+  padding-top     : 13px;
+  background-color: @color-white-background ;
+  border          : 3px solid @color-grey-bg;
 }
+
+@media (min-width: @tablet-width) {
+  .form-description {
+    width: @tablet-width;
+    order: 5;
+  }
+
+  .form-description__heading {
+    font-size  : 21px;
+    line-height: 26px;
+    margin-top : 3px;
+    text-align : center;
+
+    display: flex;
+
+    &::before {
+      content         : "";
+      display         : block;
+      background-color: @color-gray-background;
+      height          : 1px;
+      flex-grow       : 1;
+      margin-top      : 15px;
+      margin-left     : 58px;
+      margin-right    : 74px;
+    }
+
+    &::after {
+      content         : "";
+      display         : block;
+      background-color: @color-gray-background;
+      height          : 1px;
+      flex-grow       : 1;
+      margin-top      : 15px;
+      margin-left     : 77px;
+      margin-right    : 58px;
+    }
+  }
+
+  .form-description__field {
+    width         : 625px;
+    margin-left   : 61px;
+    margin-top    : 39px;
+    margin-bottom : 37px;
+    padding-top   : 16px;
+    padding-left  : 20px;
+    padding-bottom: 15px;
+    font-size     : 18px;
+    line-height   : 26px;
+  }
+
+  .form-description__field:focus {
+
+    width           : 622px;
+    margin-left     : 61px;
+    margin-top      : 40px;
+    margin-bottom   : 37px;
+    padding-top     : 13px;
+    padding-left    : 17px;
+    padding-bottom  : 12px;
+    background-color: @color-white-background ;
+    border          : 3px solid @color-grey-bg;
+  }
+}
+
 @media(min-width:@desktop-width) {
   .form-description {
     width: @desktop-width;
   }
+
   .form-description__heading {
-    font-size: 21px;
+    font-size  : 21px;
     line-height: 26px;
-    text-align: center;
+    text-align : center;
+
     &::before {
-      content: "";
-      display: block;
+      content         : "";
+      display         : block;
       background-color: @color-gray-background;
-      height: 1px;
-      flex-grow: 1;
-      margin-top: 15px;
-      margin-left: 120px;
-      margin-right: 74px;
+      height          : 1px;
+      flex-grow       : 1;
+      margin-top      : 15px;
+      margin-left     : 120px;
+      margin-right    : 74px;
     }
-  &::after {
-    content: "";
-    display: block;
-    background-color: @color-gray-background;
-    height: 1px;
-    flex-grow: 1;
-    margin-top: 15px;
-    margin-left: 77px;
-    margin-right: 120px;
+
+    &::after {
+      content         : "";
+      display         : block;
+      background-color: @color-gray-background;
+      height          : 1px;
+      flex-grow       : 1;
+      margin-top      : 15px;
+      margin-left     : 77px;
+      margin-right    : 120px;
+    }
   }
-  }
+
   .form-description__field {
-    width: 939px;
-    margin-left: 119px;
-    margin-top: 38px;
-    margin-bottom: 37px;
-    padding-top: 16px;
-    padding-left: 20px;
+    width         : 939px;
+    margin-left   : 119px;
+    margin-top    : 38px;
+    margin-bottom : 37px;
+    padding-top   : 16px;
+    padding-left  : 20px;
     padding-bottom: 15px;
-    font-size: 18px;
-    line-height: 26px;
+    font-size     : 18px;
+    line-height   : 26px;
   }
+
   .form-description__field:focus {
 
-    width: 936px;
-    margin-left: 119px;
-    margin-top: 38px;
-    margin-bottom: 37px;
-    padding-top: 13px;
-    padding-left: 17px;
-    padding-bottom: 12px;
-    font-size: 18px;
-    line-height: 26px;
-    background-color:@color-white-background ;
-    border: 3px solid @color-grey-bg;
-   }
+    width           : 936px;
+    margin-left     : 119px;
+    margin-top      : 38px;
+    margin-bottom   : 37px;
+    padding-top     : 13px;
+    padding-left    : 17px;
+    padding-bottom  : 12px;
+    font-size       : 18px;
+    line-height     : 26px;
+    background-color: @color-white-background ;
+    border          : 3px solid @color-grey-bg;
+  }
 }

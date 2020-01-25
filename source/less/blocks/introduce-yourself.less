@@ -1,164 +1,181 @@
 .introduce-yourself {
-  width:320px;
-  margin: 0 auto;
+  width         : 320px;
+  margin        : 0 auto;
   padding-bottom: 24px;
-  border-bottom: 1px solid @color-gray-background ;
+  border-bottom : 1px solid @color-gray-background ;
 }
+
 .introduce-yourself__heading {
   padding-bottom: 5px;
-  font-size:18px;
-  line-height: 26px;
-  text-align: center;
+  font-size     : 18px;
+  line-height   : 26px;
+  text-align    : center;
 }
+
 .introduce-yourself__item {
-  margin: 0;
+  margin      : 0;
   padding-left: 20px;
-  font-size: 14px;
-  line-height: 26px;
+  font-size   : 14px;
+  line-height : 26px;
 }
+
 .introduce-yourself__field-name {
-  width: 207px;
-  margin-left: 10px;
-  padding-top: 16px;
-  padding-left: 23px;
-  padding-bottom: 16px;
-  font-family: PT Sans;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
+  width           : 207px;
+  margin-left     : 10px;
+  padding-top     : 16px;
+  padding-left    : 23px;
+  padding-bottom  : 16px;
+  font-family     : PT Sans;
+  font-weight     : bold;
+  font-size       : 18px;
+  line-height     : 26px;
   background-color: @color-gray-background;
-  border: none;
+  border          : none;
 
   &::placeholder {
-    color:@color-black
+    color: @color-black
   }
 }
 
 .introduce-yourself__field {
-  width: 171px;
-  margin-left: 8px;
-  margin-top: 20px;
-  padding-top: 16px;
-  padding-left: 24px;
-  padding-bottom: 16px;
-  font-family: PT Sans;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
+  width           : 171px;
+  margin-left     : 8px;
+  margin-top      : 20px;
+  padding-top     : 16px;
+  padding-left    : 24px;
+  padding-bottom  : 16px;
+  font-family     : PT Sans;
+  font-weight     : bold;
+  font-size       : 18px;
+  line-height     : 26px;
   background-color: @color-gray-background;
-  border: none;
+  border          : none;
 
   &::placeholder {
-    color:@color-black
+    color: @color-black
   }
 }
+
 .introduce-yourself__field:hover {
   background-color: @color-grey-bg;
- }
- .introduce-yourself__field:focus {
-  outline: 0;
-  width: 167px;
-  margin-top: 19px;
-  margin-left: 8px;
-  padding-top: 14px;
-  padding-left: 21px;
-  padding-bottom: 13px;
-  background-color:@color-white-background ;
-  border: 3px solid @color-grey-bg;
- }
- .introduce-yourself__field-name:hover {
-  background-color: @color-grey-bg;
- }
- .introduce-yourself__field-name:focus {
-  outline: 0;
-  width: 204px;
-  padding-top: 13px;
-  padding-left: 20px;
-  padding-bottom: 13px;
-  background-color:@color-white-background ;
-  border: 3px solid @color-grey-bg;
- }
- @media (min-width: @tablet-width) {
-.introduce-yourself {
-
-  width:48%;
-  margin: 0;
-  order: 2;
-  border: none;
-  padding-bottom: 0;
-  }
-.introduce-yourself__heading {
-  padding-right: 122px;
-  padding-top: 36px;
-  padding-bottom: 37px;
-  font-size: 21px;
-  line-height: 26px;
 }
 
- .introduce-yourself__field-name:focus {
-  width: 190px;
-}
 .introduce-yourself__field:focus {
-  width: 154px;
-  margin-top: 20px;
-  margin-left: 8px;
-  padding-top: 13px;
-  padding-left: 21px;
-  padding-bottom: 13px;
-  background-color:@color-white-background ;
-  border: 3px solid @color-grey-bg;
- }
+  outline         : 0;
+  width           : 167px;
+  margin-top      : 19px;
+  margin-left     : 8px;
+  padding-top     : 14px;
+  padding-left    : 21px;
+  padding-bottom  : 13px;
+  background-color: @color-white-background ;
+  border          : 3px solid @color-grey-bg;
+}
 
- .introduce-yourself__item  {
-  padding-left: 43px;
+.introduce-yourself__field-name:hover {
+  background-color: @color-grey-bg;
 }
-.introduce-yourself__field-name {
-  width: 193px;
+
+.introduce-yourself__field-name:focus {
+  outline         : 0;
+  width           : 204px;
+  padding-top     : 13px;
+  padding-left    : 20px;
+  padding-bottom  : 13px;
+  background-color: @color-white-background ;
+  border          : 3px solid @color-grey-bg;
 }
-.introduce-yourself__field {
-  width: 157px;
+
+@media (min-width: @tablet-width) {
+  .introduce-yourself {
+
+    width         : 48%;
+    margin        : 0;
+    order         : 2;
+    border        : none;
+    padding-bottom: 0;
+  }
+
+  .introduce-yourself__heading {
+    padding-right : 122px;
+    padding-top   : 36px;
+    padding-bottom: 37px;
+    font-size     : 21px;
+    line-height   : 26px;
+  }
+
+  .introduce-yourself__field-name:focus {
+    width: 190px;
+  }
+
+  .introduce-yourself__field:focus {
+    width           : 154px;
+    margin-top      : 20px;
+    margin-left     : 8px;
+    padding-top     : 13px;
+    padding-left    : 21px;
+    padding-bottom  : 13px;
+    background-color: @color-white-background ;
+    border          : 3px solid @color-grey-bg;
+  }
+
+  .introduce-yourself__item {
+    padding-left: 43px;
+  }
+
+  .introduce-yourself__field-name {
+    width: 193px;
+  }
+
+  .introduce-yourself__field {
+    width: 157px;
+  }
 }
-}
+
 @media(min-width:@desktop-width) {
   .introduce-yourself {
 
-    width:50%;
+    width : 50%;
     margin: 0;
-    order: 2;
+    order : 2;
     border: none;
-    }
-  .introduce-yourself__heading {
-    padding-right: 294px;
-    padding-top: 21px;
-    padding-bottom: 37px;
-    font-size: 21px;
-    line-height: 26px;
   }
 
-   .introduce-yourself__field-name:focus {
+  .introduce-yourself__heading {
+    padding-right : 294px;
+    padding-top   : 21px;
+    padding-bottom: 37px;
+    font-size     : 21px;
+    line-height   : 26px;
+  }
+
+  .introduce-yourself__field-name:focus {
     width: 324px;
   }
-  .introduce-yourself__field:focus {
-    width: 288px;
-    margin-top: 20px;
-    margin-left: 10px;
-    padding-left: 19px;
-    padding-bottom: 13px;
-    background-color:@color-white-background ;
-    border: 3px solid @color-grey-bg;
-   }
 
-   .introduce-yourself__item  {
+  .introduce-yourself__field:focus {
+    width           : 288px;
+    margin-top      : 20px;
+    margin-left     : 10px;
+    padding-left    : 19px;
+    padding-bottom  : 13px;
+    background-color: @color-white-background ;
+    border          : 3px solid @color-grey-bg;
+  }
+
+  .introduce-yourself__item {
     padding-left: 79px;
   }
+
   .introduce-yourself__field-name {
     width: 327px;
   }
+
   .introduce-yourself__field {
-    width: 291px;
-    margin-left: 9px;
-    padding-top: 16px;
-    padding-left: 23px;
+    width         : 291px;
+    margin-left   : 9px;
+    padding-top   : 16px;
+    padding-left  : 23px;
     padding-bottom: 16px;
   }
 }
