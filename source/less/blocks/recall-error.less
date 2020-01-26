@@ -1,18 +1,25 @@
 .recall-error {
-  display: none;
-  width  : 320px;
-  margin : 0 auto;
+  display         : none;
+  position        : fixed;
+  z-index         : 20;
+  top             : 3px;
+  left            : 74%;
+  width           : 320px;
+  margin-left     : -310px;
+  background-color: @color-white-background;
+  border-left     : 1px solid @color-gray-background ;
+  box-shadow      : 0px 9px 0px rgba(0, 0, 0, .20; )
 }
 
 .recall-error__container {
-  padding-top  : 46px;
+  padding-top  : 38px;
   padding-left : 56px;
   padding-right: 57px;
 }
 
 .recall-error__heading {
   margin        : 0;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
   font-size     : 18px;
   line-height   : 26px;
   font-weight   : bold;
@@ -31,15 +38,16 @@
 
 .recall-error__button {
   margin-top      : 20px;
-  margin-left     : 72px;
-  margin-bottom   : 35px;
-  padding-top     : 22px;
-  padding-left    : 78px;
-  padding-right   : 79px;
-  padding-bottom  : 22px;
+  margin-left     : 70px;
+  margin-bottom   : 33px;
+  padding-top     : 17px;
+  padding-right   : 77px;
+  padding-bottom  : 16px;
+  padding-left    : 79px;
   font-size       : 18px;
   line-height     : 26px;
   font-weight     : bold;
+  font-family     : PT Sans;
   border          : none;
   outline         : 0;
   color           : @color-white-color;
