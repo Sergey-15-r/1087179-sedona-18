@@ -1,10 +1,10 @@
 .attractions {
-  width        : 320px;
-  margin       : 0 auto;
-  padding-left : 0;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 0;
   padding-right: 0;
-  border       : none;
-  border-bottom: 1px solid @color-gray-background ;
+  border: none;
+  border-bottom: 1px solid @color-gray-background;
 }
 
 .attractions__wrapper {
@@ -12,35 +12,34 @@
 }
 
 .attractions__heading {
-  margin       : 0;
-  padding-top  : 15px;
+  margin: 0;
+  padding-top: 15px;
   padding-right: 13px;
-  font-size    : 18px;
-  line-height  : 26px;
-  font-weight  : bold;
-  text-align   : center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .attractions__list {
-  margin        : 0;
-  margin-top    : -23px;
-  padding       : 0;
+  margin: 0;
+  margin-top: -23px;
+  padding: 0;
   padding-bottom: 30px;
-  font-size     : 18px;
-  line-height   : 26px;
-  font-weight   : bold;
-  list-style    : none;
-
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  list-style: none;
 }
 
 .attractions__item {
   padding-left: 88px;
-  padding-top : 55px;
+  padding-top: 55px;
 }
 
 .attractions__item-bell {
   padding-left: 88px;
-  padding-top : 55px;
+  padding-top: 55px;
 }
 
 .attractions__item-bell label {
@@ -48,7 +47,7 @@
 
   display: block;
 
-  cursor     : pointer;
+  cursor: pointer;
   user-select: none;
 }
 
@@ -57,13 +56,13 @@
 
   display: block;
 
-  cursor     : pointer;
+  cursor: pointer;
   user-select: none;
 }
 
 .attractions__item-park {
   padding-left: 88px;
-  padding-top : 55px;
+  padding-top: 55px;
 }
 
 .attractions__item-park label {
@@ -71,14 +70,13 @@
 
   display: block;
 
-  cursor     : pointer;
+  cursor: pointer;
   user-select: none;
 }
 
 .attractions__item-rocks {
-  padding-top : 55px;
+  padding-top: 55px;
   padding-left: 88px;
-
 }
 
 .attractions__item-rocks label {
@@ -86,168 +84,162 @@
 
   display: block;
 
-  cursor     : pointer;
-  user-select: none
+  cursor: pointer;
+  user-select: none;
 }
 
-.attractions-input-checkbox+label::before {
-  content         : "";
-  position        : absolute;
-  top             : -15px;
-  left            : -81px;
-  min-width       : 55px;
-  min-height      : 55px;
-  border-radius   : 5%;
+.attractions-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -81px;
+  min-width: 55px;
+  min-height: 55px;
+  border-radius: 5%;
   background-color: @color-gray-background;
 }
 
-.attractions-input-checkbox:checked+label::after {
-  content            : "";
-  position           : absolute;
-  top                : 6px;
-  left               : -63px;
-  width              : 24px;
-  height             : 16px;
-  background-image   : url(../img/icon-tick.svg);
-  background-repeat  : no-repeat;
+.attractions-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -63px;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.attractions-input-checkbox+label:hover::before {
-  background-color: @color-white-hover ;
+.attractions-input-checkbox + label:hover::before {
+  background-color: @color-white-hover;
 }
 
-.attractions-input-checkbox+label:active::before {
-  background-color: @color-white-activ ;
+.attractions-input-checkbox + label:active::before {
+  background-color: @color-white-activ;
 }
 
-.attractions-input-checkbox+label:active::after {
+.attractions-input-checkbox + label:active::after {
   opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .attractions {
-    width : @tablet-width;
+    width: @tablet-width;
     border: none;
-    order : 4;
-
+    order: 4;
   }
 
   .attractions__heading {
-
     padding-top: 5px;
-    font-size  : 21px;
+    font-size: 21px;
     line-height: 26px;
-    text-align : center;
-    display    : flex;
+    text-align: center;
+    display: flex;
 
     &::before,
     &::after {
-      content         : "";
-      display         : block;
+      content: "";
+      display: block;
       background-color: @color-gray-background;
-      height          : 1px;
-      flex-grow       : 1;
-      margin-top      : 26px;
-      margin-left     : 49px;
-      margin-right    : 47px;
+      height: 1px;
+      flex-grow: 1;
+      margin-top: 26px;
+      margin-left: 49px;
+      margin-right: 47px;
     }
-
   }
 
   .attractions__list {
-    display      : flex;
-    flex-wrap    : wrap;
-    margin-top   : 0;
-    margin-left  : 129px;
-    margin-right : 131px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: 129px;
+    margin-right: 131px;
     margin-bottom: 40px;
   }
 
   .attractions__item {
-    margin-top  : 3px;
+    margin-top: 3px;
     padding-left: 95px;
   }
 
   .attractions__item-bell {
-    margin-top  : 3px;
+    margin-top: 3px;
     padding-left: 150px;
   }
 
   .attractions__item-park {
-    margin-top  : 7px;
+    margin-top: 7px;
     padding-left: 95px;
-
   }
 
   .attractions__item-rocks {
-    margin-top  : 7px;
+    margin-top: 7px;
     padding-left: 168px;
   }
 }
 
-@media(min-width:@desktop-width) {
+@media (min-width: @desktop-width) {
   .attractions {
     width: @desktop-width;
     order: 4;
-
   }
 
   .attractions__heading {
-    margin     : 0;
+    margin: 0;
     padding-top: 6px;
-    font-size  : 21px;
+    font-size: 21px;
     line-height: 26px;
 
     &::before {
-      content         : "";
-      display         : block;
+      content: "";
+      display: block;
       background-color: @color-gray-background;
-      height          : 1px;
-      flex-grow       : 1;
-      margin-top      : 26px;
-      margin-left     : 109px;
-      margin-right    : 62px;
+      height: 1px;
+      flex-grow: 1;
+      margin-top: 26px;
+      margin-left: 109px;
+      margin-right: 62px;
     }
 
     &::after {
-      content         : "";
-      display         : block;
+      content: "";
+      display: block;
       background-color: @color-gray-background;
-      height          : 1px;
-      flex-grow       : 1;
-      margin-top      : 26px;
-      margin-left     : 65px;
-      margin-right    : 105px;
+      height: 1px;
+      flex-grow: 1;
+      margin-top: 26px;
+      margin-left: 65px;
+      margin-right: 105px;
     }
   }
 
   .attractions__list {
-    display      : flex;
-    flex-wrap    : wrap;
-    margin-left  : 89px;
-    margin-right : 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 89px;
+    margin-right: 100px;
     margin-bottom: 39px;
   }
 
   .attractions__item {
-    margin-top  : 3px;
+    margin-top: 3px;
     padding-left: 98px;
   }
 
   .attractions__item-bell {
-    margin-top  : 3px;
+    margin-top: 3px;
     padding-left: 150px;
   }
 
   .attractions__item-park {
-    margin-top  : 3px;
+    margin-top: 3px;
     padding-left: 152px;
-
   }
 
   .attractions__item-rocks {
-    margin-top  : 3px;
+    margin-top: 3px;
     padding-left: 145px;
   }
 }

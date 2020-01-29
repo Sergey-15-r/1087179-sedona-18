@@ -1,79 +1,73 @@
 .social__text {
-  display        : flex;
+  display: flex;
   justify-content: center;
-  padding-top    : 14px;
-  font-size      : 21px;
-  line-height    : 26px;
-  font-weight    : bold;
+  padding-top: 14px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .social__list {
-  display        : flex;
+  display: flex;
   justify-content: center;
-  padding        : 0;
-  padding-top    : 18px;
-  padding-left   : 5px;
-  list-style     : none;
+  padding: 0;
+  padding-top: 18px;
+  padding-left: 5px;
+  list-style: none;
 }
 
 .social__item a {
-  position        : relative;
-  display         : flex;
-  min-width       : 46px;
-  min-height      : 46px;
-  margin-right    : 6px;
+  position: relative;
+  display: flex;
+  min-width: 46px;
+  min-height: 46px;
+  margin-right: 6px;
   background-color: @color-blue-background;
-
 }
 
 .social__link--twitter::before {
-
-  content            : "";
-  position           : absolute;
-  top                : 16px;
-  left               : 15px;
-  width              : 18px;
-  height             : 14px;
-  background-image   : url(../img/icon-twitter.svg);
-  background-repeat  : no-repeat;
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  width: 18px;
+  height: 14px;
+  background-image: url(../img/icon-twitter.svg);
+  background-repeat: no-repeat;
   background-position: 0 0;
-
-
 }
 
 .social__link--facebook::before {
-  content            : "";
-  position           : absolute;
-  top                : 13px;
-  left               : 19px;
-  width              : 9px;
-  height             : 18px;
-  background-image   : url(../img/icon-facebook.svg);
-  background-repeat  : no-repeat;
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 19px;
+  width: 9px;
+  height: 18px;
+  background-image: url(../img/icon-facebook.svg);
+  background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .social__link--youtube::before {
-
-  content            : "";
-  position           : absolute;
-  top                : 16px;
-  left               : 14px;
-  width              : 20px;
-  height             : 14px;
-  background-image   : url(../img/icon-youtube.svg);
-  background-repeat  : no-repeat;
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  width: 20px;
+  height: 14px;
+  background-image: url(../img/icon-youtube.svg);
+  background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .social__item a[href] {
-
   &:hover {
     background-color: @color-blue-hover;
   }
 
   &:active {
-    background-color: @color-blue-activ ;
+    background-color: @color-blue-activ;
   }
 }
 
@@ -81,35 +75,30 @@
   opacity: 0.3;
 }
 
-
-
 @media (min-width: @tablet-width) {
-
   .social {
     display: flex;
   }
 
   .social__list {
-    padding-top : 22px;
+    padding-top: 22px;
     padding-left: 112px;
   }
 
   .social__text {
-    padding-top : 25px;
+    padding-top: 25px;
     padding-left: 61px;
   }
 }
 
-@media(min-width:@desktop-width) {
-
+@media (min-width: @desktop-width) {
   .social__list {
-    padding-top : 21px;
+    padding-top: 21px;
     padding-left: 270px;
   }
 
   .social__text {
-    padding-top : 24px;
+    padding-top: 24px;
     padding-left: 118px;
-
   }
 }
